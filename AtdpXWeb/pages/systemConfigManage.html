@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统参数管理</title>
+    <link href="../css/systemConfig.css" rel="stylesheet" type="text/css">
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body_style">
+<div id="horizental-bar">
+    <img id="img_header" src="../img/ATP-LOGO.png">
+    <a id="bar-title">AtdpX系统参数管理</a>
+</div>
+<div id="table" >
+    <table class="altrowstable" id="alternatecolor">
+        <tr>
+            <th>ID</th><th>ConfigName</th><th>Value</th>
+        </tr>
+        <tr>
+            <td>Text 1A</td><td>Text 1B</td><td>Text 1C</td>
+        </tr>
+        <tr>
+            <td>Text 2A</td><td>Text 2B</td><td>Text 2C</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Text 3A</td><td>Text 3B</td><td>Text 3C</td>
+        </tr>
+        <tr>
+            <td>Text 4A</td><td>Text 4B</td><td>Text 4C</td>
+        </tr>
+        <tr>
+            <td>Text 5A</td><td>Text 5B</td><td>Text 5C</td>
+        </tr>
+    </table>
+    <img src="../img/next.png">
+</div>
+<div class="bs-docs-footer">
+    <small>Tino©2016 首都师范大学软件工程学院</small>
+</div>
+</body>
+<!-- Javascript goes in the document HEAD -->
+<script type="text/javascript">
+    function altRows(id){
+        if(document.getElementsByTagName){
+
+            var table = document.getElementById(id);
+            var rows = table.getElementsByTagName("tr");
+
+            for(i = 0; i < rows.length; i++){
+                if(i % 2 == 0){
+                    rows[i].className = "evenrowcolor";
+                }else{
+                    rows[i].className = "oddrowcolor";
+                }
+            }
+        }
+    }
+
+    window.onload=function(){
+        altRows('alternatecolor');
+    }
+</script>
+</html>
