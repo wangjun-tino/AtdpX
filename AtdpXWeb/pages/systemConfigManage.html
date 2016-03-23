@@ -1,64 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>绯荤粺鍙傛暟绠＄悊</title>
-    <link href="../css/systemConfig.css" rel="stylesheet" type="text/css">
-    <link href="../css/login.css" rel="stylesheet" type="text/css">
+<html>
+<head lang="en">
+    <meta charset="gb2312">
+    <title>系统参数管理</title>
+    <link href="../css/systemConfigManage.css" rel="stylesheet"/>
 </head>
-<body class="body_style">
-<div id="horizental-bar">
-    <img id="img_header" src="../img/ATP-LOGO.png">
-    <a id="bar-title">AtdpX绯荤粺鍙傛暟绠＄悊</a>
-</div>
-<div id="table" >
-    <table class="altrowstable" id="alternatecolor">
-        <tr>
-            <th>ID</th><th>ConfigName</th><th>Value</th>
-        </tr>
-        <tr>
-            <td>Text 1A</td><td>Text 1B</td><td>Text 1C</td>
-        </tr>
-        <tr>
-            <td>Text 2A</td><td>Text 2B</td><td>Text 2C</td>
-        </tr>
-        </tr>
-        <tr>
-            <td>Text 3A</td><td>Text 3B</td><td>Text 3C</td>
-        </tr>
-        <tr>
-            <td>Text 4A</td><td>Text 4B</td><td>Text 4C</td>
-        </tr>
-        <tr>
-            <td>Text 5A</td><td>Text 5B</td><td>Text 5C</td>
-        </tr>
-    </table>
-    <img src="../img/next.png">
-</div>
-<div class="bs-docs-footer">
-    <small>Tino漏2016 棣栭兘甯堣寖澶у杞欢宸ョ▼瀛﹂櫌</small>
-</div>
+<body class="body-style">
+    <div id="config-edit-box" >
+        <div id="top-box">
+            <div id="config-table-box"></div>
+            <div id="config-table-bar-box" >
+                <ul id="config-table-bar-ul">
+                    <li id="config-table-next-button">Next</li>
+                    <li id="config-table-praves-button">Previous</li>
+                    <li><a id="config-table-now-page-count"></a></li>
+                    <li><a id="config-table-table-page-count"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="config-edit-box2">
+        <form id="user-edit-form">
+            <br/>
+            <a id="parameter-name">ParameterName:<br/><input id="parameterName" type="text" size="40" /></a>
+            <br/>
+            <a id="parameter-values">ParameterValues:<br/><input id="parameterValues" type="text" size="40" /></a>
+            <br/>
+        </form>
+        <button id="add-button">Add</button>
+        <button id="delete-button">Delete</button>
+        <button id="submit-button">Save</button>
+        <button id="cancel-button">Cancel</button>
+    </div>
 </body>
-<!-- Javascript goes in the document HEAD -->
-<script type="text/javascript">
-    function altRows(id){
-        if(document.getElementsByTagName){
-
-            var table = document.getElementById(id);
-            var rows = table.getElementsByTagName("tr");
-
-            for(i = 0; i < rows.length; i++){
-                if(i % 2 == 0){
-                    rows[i].className = "evenrowcolor";
-                }else{
-                    rows[i].className = "oddrowcolor";
-                }
-            }
-        }
-    }
-
-    window.onload=function(){
-        altRows('alternatecolor');
-    }
-</script>
+<script type="application/javascript" src="../js/lib/jquery1.11.1/jquery-1.11.1.js"></script>
+<script src="../js/atdpx/systemConfigManage.js" type="application/javascript"></script>
 </html>

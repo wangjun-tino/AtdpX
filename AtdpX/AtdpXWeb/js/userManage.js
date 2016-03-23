@@ -32,19 +32,55 @@ function Table() {
 function getValues(values,page,pageNum){
     return values.slice(page*pageNum-pageNum,page*pageNum);
 };
-var values=[
-    {"ID":1,"NAME":"wangjun","AGE":"30","RNAME":"王君","PW":"33333"},
-    {"ID":2,"NAME":"wangjunru","AGE":"30","RNAME":"王君如","PW":"33333"},
-    {"ID":3,"NAME":"wangyan","AGE":"31","RNAME":"王艳","PW":"33333"},
-    {"ID":4,"NAME":"wangyi","AGE":"32","RNAME":"王毅","PW":"33333"},
-    {"ID":5,"NAME":"wangyinuo","AGE":"33","RNAME":"王一诺","PW":"33333"},
-    {"ID":6,"NAME":"wangguang","AGE":"31","RNAME":"王光","PW":"33333"},
-    {"ID":7,"NAME":"wangtai","AGE":"32","RNAME":"王涛","PW":"33333"},
-    {"ID":8,"NAME":"wangyucheng","AGE":"33","RNAME":"王雨辰","PW":"33333"},
-    {"ID":9,"NAME":"wangsong","AGE":"31","RNAME":"王松","PW":"33333"},
-    {"ID":10,"NAME":"wangyong","AGE":"32","RNAME":"王勇","PW":"33333"},
-    {"ID":11,"NAME":"wangyue","AGE":"33","RNAME":"王悦","PW":"33333"}]
-var userModel={"ID":1,"NAME":"王君","AGE":"30","RNAME":"Man","PW":"33333"};
+//$.ajax({
+//    type:"POST",
+//    data:"",
+//    //dataType:'html',
+//    cache:false,
+//    dataType: "jsonp",
+//    url: "http://127.0.0.1:8000/AtdpX/userInfo/query/",
+//    success:function (data){
+//        alert(data);
+//    },
+//    error:function (data){
+//        alert(data['rows']);
+//    }
+//});
+//获取名称的方法，参数为一个函数
+$.ajax({
+    type:"GET",
+    data:"",
+    dataType:'jsonp',
+    cache:false,
+    url: "http://localhost:8080/AtdpX/userInfo/query/",
+    success:function (data){
+        alert(data);
+    },
+    error:function (){
+        alert("Error:http://172.23.44.52:8080/AtpXdemo/AtpXWeb/Switch/");
+    }
+});
+var values
+$.get("/AtdpX/userInfo/query/",function(content){
+
+    console.log("success ajax");
+    values=conten['rows'];
+
+});
+
+//var values=[
+//    {"userId":1,"userName":"wangjun","AGE":"30","realName":"王君","password":"33333"},
+//    {"userId":2,"userName":"wangjunru","age":"30","realName":"王君如","password":"33333"},
+//    {"userId":3,"userName":"wangyan","age":"31","realName":"王艳","password":"33333"},
+//    {"userId":4,"userName":"wangyi","age":"32","realName":"王毅","password":"33333"},
+//    {"userId":5,"userName":"wangyinuo","age":"33","realName":"王一诺","password":"33333"},
+//    {"userId":6,"userName":"wangguang","age":"31","realName":"王光","password":"33333"},
+//    {"userId":7,"userName":"wangtai","age":"32","realName":"王涛","password":"33333"},
+//    {"userId":8,"userName":"wangyucheng","age":"33","realName":"王雨辰","password":"33333"},
+//    {"userId":9,"userName":"wangsong","age":"31","realName":"王松","password":"33333"},
+//    {"userId":10,"userName":"wangyong","age":"32","realName":"王勇","password":"33333"},
+//    {"userId":11,"userName":"wangyue","age":"33","realName":"王悦","password":"33333"}]
+var userModel={"userId":1,"userName":"wangjun","AGE":"30","realName":"王君","password":"33333"};
 var pageNum=10;
 var page=1;
 //总页数
@@ -96,10 +132,10 @@ function FindEditData(id){
         i++;
     }
     $("#user-edit-box2").show().center(350,250)
-    $("#username").val(oldRowValues["NAME"])
-    $("#password").val(oldRowValues['PW'])
-    $("#realname").val(oldRowValues['RNAME'])
-    $("#uaerage").val(oldRowValues['AGE'])
+    $("#username").val(oldRowValues["userName"])
+    $("#password").val(oldRowValues['password'])
+    $("#realname").val(oldRowValues['realName'])
+    $("#uaerage").val(oldRowValues['age'])
 };
 //d定位方法
 $(document).ready(function()
@@ -117,13 +153,14 @@ $(document).ready(function()
 $("#submit-button").click(function(){
     alert("提交成功")
     var SubmitData={}
-    SubmitData["user_name"]=$("#username").val()
+    SubmitData["username"]=$("#username").val()
     SubmitData["password"]=$("#password").val()
-    SubmitData["real_name"]=$("#realname").val()
+    SubmitData["realname"]=$("#realname").val()
     SubmitData["age"]=$("#uaerage").val()
     $("#user-edit-box2").css("display","none")
     location.reload();
 })
+
 //备份代码
 //$("#now-page-count").click(function ()
 //{

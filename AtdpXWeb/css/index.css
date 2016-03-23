@@ -63,16 +63,7 @@
     text-align: center;
 }
 #exit-box:hover{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    background-color: #666666;
-    border-radius: 5px;
-    position: absolute;
-    margin-top: -50px;
-    margin-left:95%;
-    font-size: large;
-    text-align: center;
+    background-color: #3875d7;
 }
 #title-text{
     color: #FFFFFF;
@@ -177,4 +168,7 @@ iframe{
     width:1300px;
     height:700px;
     border-radius: 5px;
+}
+#user-img-box:hover{
+    background-color: #3875d7;
 }

@@ -1,0 +1,268 @@
+.body-style{
+    background-color: #999999;
+}
+#user-edit-box{
+    width: 1280px;
+    height: 680px;
+    background-color: #444444;
+    border-radius: 5px;
+}
+#top-box{
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 600px;
+    height: 320px;
+    background-color: #666666;
+    border-radius: 5px;
+    position: absolute;
+}
+#top-box:hover{
+    background-color: #3875d7;
+}
+#suite-table{
+    width: 580px;
+    height: 265px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #999999;
+    border-radius: 5px;
+    position: relative;
+}
+#suite-table-bar-box{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 580px;
+    height: 30px;
+    background-color: #999999;
+    border-radius: 5px;
+    position:relative;
+}
+#suite-table-bar-ul{
+    list-style-type: none;
+    margin-top: -10px;
+    margin-left: 5%;
+
+}
+#suite-table-bar-ul li{
+    margin-left: 2px;
+    float: left;
+    width:100px;
+    height: 30px;
+    background-color: #333333;
+    filter: Alpha(opacity=80);
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    color: #FFFFFF;
+}
+#suite-table-bar-ul li:hover{
+    background-color: #3875d7;
+}
+/*底合*/
+#bottom-box{
+    margin-left: 25px;
+    margin-top: 345px;
+    width: 600px;
+    height: 320px;
+    background-color: #666666;
+    border-radius: 5px;
+    position:absolute;
+}
+#bottom-box:hover{
+    background-color: #3875d7;
+}
+#item-table{
+    width: 580px;
+    height: 265px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #999999;
+    border-radius: 5px;
+    position: relative;
+}
+#item-table-bar-box{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 580px;
+    height: 30px;
+    background-color: #999999;
+    border-radius: 5px;
+    position:relative;
+}
+#item-table-bar-ul{
+    list-style-type: none;
+    margin-top: -10px;
+    margin-left: 5%;
+
+}
+#item-table-bar-ul li{
+    margin-left: 2px;
+    float: left;
+    width:100px;
+    height: 30px;
+    background-color: #333333;
+    filter: Alpha(opacity=80);
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    color: #FFFFFF;
+}
+#item-table-bar-ul li:hover{
+    background-color: #3875d7;
+}
+/*右合*/
+#right-box{
+    margin-top: 15px;
+    margin-left: 635px;
+    width: 630px;
+    height: 650px;
+    position: absolute;
+    background-color: #666666;
+    border-radius: 5px;
+}
+#right-box:hover{
+    background-color: #3875d7;
+}
+#step-table{
+    width: 610px;
+    height: 590px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #999999;
+    border-radius: 5px;
+    position: relative;
+}
+#step-table-bar-box{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 610px;
+    height: 30px;
+    background-color: #999999;
+    border-radius: 5px;
+    position:relative;
+}
+#step-table-bar-ul{
+    list-style-type: none;
+    margin-top: -10px;
+    margin-left: 5%;
+
+}
+#step-table-bar-ul li{
+    margin-left: 2px;
+    float: left;
+    width:80px;
+    height: 30px;
+    background-color: #333333;
+    filter: Alpha(opacity=80);
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    color: #FFFFFF;
+}
+#step-table-bar-ul li:hover{
+    background-color: #3875d7;
+}
+/*公共样式*/
+table{
+    border-radius: 5px;
+}
+tr:hover{
+    background-color: #3875d7;
+}
+td{
+    text-align: center;
+    width: 180px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+td:hover{
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+    color: #000000;
+}
+#suite-edit-box{
+    margin-top: 25px;
+    margin-left: 645px;
+    width: 300px;
+    height: 300px;
+    background-color: #999999;
+    border-radius: 5px;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+}
+#suite-edit-box a{
+    margin-left: 10px;
+    width: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#suite-edit-box input{
+    margin-left: 10px;
+}
+#suite-edit-box textarea{
+    margin-left: 10px;
+    width: 275px;
+}
+#item-edit-box{
+    margin-top: 25px;
+    margin-left: 645px;
+    width: 300px;
+    height: 300px;
+    background-color: #999999;
+    border-radius: 5px;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+}
+#item-edit-box a{
+    margin-left: 10px;
+    width: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#item-edit-box input{
+    margin-left: 10px;
+}
+#item-edit-box textarea{
+    margin-left: 10px;
+    width: 275px;
+}
+#step-edit-box{
+    margin-top: 25px;
+    margin-left: 645px;
+    width: 300px;
+    height: 500px;
+    background-color: #999999;
+    border-radius: 5px;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+}
+#step-edit-box a{
+    margin-left: 10px;
+    width: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#step-edit-box input{
+    margin-left: 10px;
+}
+#step-edit-box textarea{
+    margin-left: 10px;
+    width: 275px;
+}
+button{
+    width: 50px;
+    height: 20px;
+    color: #FFFFFF;
+    background-color: #666666;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left:10px;
+    position: relative;
+}
+button:hover{
+    background-color: #3875d7;
+}

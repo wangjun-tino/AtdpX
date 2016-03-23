@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'AtdpX.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'atp_db',
+        'NAME': 'atdpx_db',
         'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
         #'CONN_MAX_AGE':1200,
         'POOL_SIZE':40,
@@ -102,6 +102,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+TokenKey=12348
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/

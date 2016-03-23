@@ -12,9 +12,11 @@
 <div id="input-dis">
     <from id="login_index" method="post" action="index.html">
         <br/>
-        &nbsp&nbsp&nbsp<input  name="username" type="text" size="20" placeholder="UserName"/>
+        &nbsp&nbsp&nbsp<input id="username" name="username" type="text" size="20" placeholder="UserName"/>
+        <span class="clearer glyphicon glyphicon-remove-circle form-control-feedback"></span>
         <br/>
-        &nbsp&nbsp&nbsp<input  name="password" type="password"  placeholder="PassWord" size="20" maxlength="6"/>
+        &nbsp&nbsp&nbsp<input id="userpassword" name="password" type="password"  placeholder="PassWord" size="20" maxlength="13"/>
+        <span class="clearer glyphicon glyphicon-remove-circle form-control-feedback"></span>
     </from>
     <button id ="login_buttom">Log in</button>
 </div>
@@ -22,4 +24,7 @@
     <small>Tino©2016 首都师范大学软件工程学院</small>
 </div>
 </body>
+<script type="application/javascript" src="../js/lib/jquery1.11.1/jquery-1.11.1.js" ></script>
+<script type="application/javascript" src="../js/atdpx/login.js"></script>
+<script type="application/javascript" src="../config/SystemConfig.js"></script>
 </html>

@@ -18,5 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^AtdpX/userInfo/', include('userInfo.urls')),
+    url(r'^AtdpX/testCase/', include('testCase.urls')),
+    url(r'^AtdpX/sysConfig/', include('sysConfig.urls')),
 ]
 

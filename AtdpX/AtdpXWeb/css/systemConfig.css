@@ -1,0 +1,45 @@
+#horizental-bar a{
+    text-align: center;
+    font-size: xx-large ;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.body-style{
+    background-color: #999999;
+}
+
+table.altrowstable {
+    font-family: verdana,arial,sans-serif;
+    font-size: large;
+    color: #FFFFFF;
+    border-width: 1px;
+    border-color: darkgrey;
+    border-collapse: collapse;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+table.altrowstable th {
+    border-width: 3px;
+    padding: 8px;
+    border-style: solid;
+    border-color: darkgrey;
+    border-radius: 5px;
+    text-align: center;
+}
+table.altrowstable td {
+    border-width: 3px;
+    padding: 8px;
+    border-style: solid;
+    border-color: darkgrey;
+    border-radius: 5px;
+    text-align: center;
+}
+.oddrowcolor{
+    background-color: #444444 ;
+}
+.evenrowcolor{
+    background-color:#444444;
+}

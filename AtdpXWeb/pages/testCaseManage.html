@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="gb2312">
+    <title>用户管理</title>
+    <link href="../css/testCaseManage.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="body-style">
+<div id="user-edit-box">
+    <div id="top-box">
+        <div id="suite-table"></div>
+        <div id="suite-table-bar-box" >
+            <ul id="suite-table-bar-ul">
+                <li id="suite-table-next-button">Next</li>
+                <li id="suite-table-praves-button">Previous</li>
+                <li><a id="suite-table-now-page-count"></a></li>
+                <li><a id="suite-table-table-page-count"></a></li>
+                <li><a id="submit">Submite</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bottom-box">
+        <div id="item-table"></div>
+        <div id="item-table-bar-box">
+            <ul id="item-table-bar-ul">
+                <li id="item-table-next-button">Next</li>
+                <li id="item-table-praves-button">Previous</li>
+                <li><a id="item-table-now-page-count"></a></li>
+                <li><a id="item-table-table-page-count"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="right-box">
+        <div id="step-table" ></div>
+        <div id="step-table-bar-box">
+            <ul id="step-table-bar-ul">
+                <li id="step-table-next-button">Next</li>
+                <li id="step-table-praves-button">Previous</li>
+                <li><a id="step-table-now-page-count"></a></li>
+                <li><a id="step-table-table-page-count"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="suite-edit-box">
+        <br/>
+        <br/>
+        <a id="test-suite-name">TestSuiteName:<br/><input id="test_suite_name" size="40" type="text"/></a>
+        <br/>
+        <a id="test-suite-describe">TestSuiteDesc:<br/><textarea id="test_suite_describe" ></textarea></a>
+        <br/>
+        <a id="tester-a">Tester:<br/><input id="tester" size="40" type="text"/> </a>
+        <br/>
+        <input id="test_suite_id" size="40" type="text" hidden="hidden"/>
+        <button id="suite-delete-button">Delete</button>
+        <button id="suite-submit-button">Save</button>
+        <button id="suite-cancel-button">Cancel</button>
+    </div>
+    <div id="item-edit-box">
+        <br/>
+        <br/>
+        <a id="item-name">ItemName:<br/><input id="item_name" size="40" type="text"/></a>
+        <br/>
+        <a id="test-item-desc">TestItemDesc:<br/><textarea id="test_item_desc" ></textarea></a>
+        <br/>
+        <a id="driver-a">Driver:<br/><input id="driver" size="40" type="text"/> </a>
+        <br/>
+        <a id="environment-a">Environment:<br/><textarea id="environment" ></textarea></a>
+        <br/>
+        <a id="item-sequence">ItemSequence:<br/><input id="item_sequence" size="40" type="text"/> </a>
+        <br/>
+        <input id="test_item_id" size="40" type="text" hidden="hidden"/>
+        <button id="item-delete-button">Delete</button>
+        <button id="item-submit-button">Save</button>
+        <button id="item-cancel-button">Cancel</button>
+    </div>
+    <div id="step-edit-box">
+        <br/>
+        <br/>
+        <a id="data-desc">DataDesc:<br/><textarea id="data_desc" ></textarea></a>
+        <br/>
+        <a id="data-a">Data:<br/><textarea id="data" ></textarea></a>
+        <br/>
+        <a id="expect-data">ExpectData:<br/><textarea id="expect_data" ></textarea></a>
+        <br/>
+        <a id="type-a">Type:<br/><input id="type" size="40" type="text"/> </a>
+        <br/>
+        <a id="step-sequence">StepSequence:<br/><input id="step_sequence" size="40" type="text"/></a>
+        <br/>
+        <input id="data_id" size="40" type="text" hidden="hidden"/>
+        <button id="step-delete-button">Delete</button>
+        <button id="step-submit-button">Save</button>
+        <button id="step-cancel-button">Cancel</button>
+    </div>
+</div>
+</body>
+<script type="application/javascript" src="../js/lib/jquery1.11.1/jquery-1.11.1.js"></script>
+<script type="application/javascript" src="../js/atdpx/testCaseManage.js"></script>
+<script type="application/javascript" src="../config/SystemConfig.js"></script>
+</html>
