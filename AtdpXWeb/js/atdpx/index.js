@@ -24,6 +24,11 @@ $("#left-link-li").click(function(){
     boxHtml.innerHTML="<iframe src='Link.html'></iframe>"
     $("#main-box-title").html($("#left-link-li").text())
 })
+$("#left-Task-li").click(function(){
+    var boxHtml=document.getElementById("put-on-box");
+    boxHtml.innerHTML="<iframe src='taskManage.html'></iframe>"
+    $("#main-box-title").html($("#left-Task-li").text())
+})
 $("#home-li").click(function(){
     var boxHtml=document.getElementById("put-on-box");
     boxHtml.innerHTML="<iframe src='mainPage.html'></iframe>"
@@ -42,6 +47,11 @@ $("#config-li").click(function(){
     var boxHtml=document.getElementById("put-on-box");
     boxHtml.innerHTML="<iframe src='systemConfigManage.html'></iframe>"
     $("#main-box-title").html($("#left-test-li").text())
+})
+$("#Task-li").click(function(){
+    var boxHtml=document.getElementById("put-on-box");
+    boxHtml.innerHTML="<iframe src='taskManage.html'></iframe>"
+    $("#main-box-title").html($("#Task-li").text())
 })
 $("#exit-img").click(function(){
     setCookie("token", "", -1)

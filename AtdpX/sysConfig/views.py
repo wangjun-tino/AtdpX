@@ -41,7 +41,7 @@ def sysConfigUpdate(request):
             SysConfig.objects.create(parameterName=parameter['parameterName'],parameterValues=parameter['parameterValues'])
             response=errResponse(U"参数ID为空,新增成功",0)
         sysConfig=SysConfig.objects.filter(id=parameter['id'])
-        if not sysConfig and not sysParameterName :
+        if not sysConfig and not sysParameterName and  parameter['id'] :
             print '修改系统参数信息不存在'
             SysConfig.objects.create(parameterName=parameter['parameterName'],parameterValues=parameter['parameterValues'])
             response=errResponse(U"系统参数信息不存在,新增成功",0)
