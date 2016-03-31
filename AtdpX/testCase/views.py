@@ -64,7 +64,7 @@ def testSuiteSubmit(request):
                         testSteps=item['test_step']
                         for step in testSteps:
                              TestStep.objects.create(data_desc=step['data_desc'],data=json.dumps(step['data']),expect_data=json.dumps(step['expect_data']),\
-                                                    type=step['type'],result_log=step['result_log'],step_sequence=step['step_sequence']
+                                                    type=step['type'],result_log=step['result_log'],step_sequence=step['step_sequence'],item_id=TestItemid
                              )
         else:
             suiteNone=TestSuite.objects.filter(test_suite_id=suiteData['test_suite_id'])
@@ -95,7 +95,7 @@ def testSuiteSubmit(request):
                     for step in testSteps:
                         if step['data_id']==-1:
                             TestStep.objects.create(data_desc=step['data_desc'],data=json.dumps(step['data']),expect_data=json.dumps(step['expect_data']),\
-                                                    type=step['type'],result_log=step['result_log'],step_sequence=step['step_sequence'])
+                                                    type=step['type'],result_log=step['result_log'],step_sequence=step['step_sequence'],item_id=item['test_item_id'])
                         else:
                             TestStep.objects.filter(data_id=step['data_id']).update(data_desc=step['data_desc'],data=json.dumps(step['data']),expect_data=json.dumps(step['expect_data']),\
                                                     type=step['type'],result_log=step['result_log'],step_sequence=step['step_sequence'])

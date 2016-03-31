@@ -27,7 +27,7 @@ class TestStep(models.Model):
     data_desc=models.TextField(null=False,db_column='data_desc',db_tablespace='atdpx_db')
     data=models.TextField(null=True,db_column='data',db_tablespace='atdpx_db')
     expect_data=models.TextField(null=True,db_column='expect_data',db_tablespace='atdpx_db')
-    type=models.IntegerField(null=False,db_column='type',db_tablespace='atdpx_db',max_length=10)
+    type=models.CharField(null=False,db_column='type',db_tablespace='atdpx_db',max_length=50)
     item_id=models.IntegerField(null=False,db_column='item_id',db_tablespace='atdpx_db',max_length=11)
     result_log=models.TextField(null=True,db_column='result_log',db_tablespace='atdpx_db')
     step_sequence=models.IntegerField(null=False,db_column='step_sequence',db_tablespace='atdpx_db',max_length=13)
