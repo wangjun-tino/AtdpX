@@ -507,9 +507,9 @@ function Table() {
     var suitePage=1;
     var itemPage=1;
     var stepPage=1;
-    var suitePageNum=itemPageNum=2;
-    var stepPageNum=2;
+    var suitePageNum=itemPageNum=5;
+    var stepPageNum=15;
     var suiteModel={"test_suite_id": -1, "test_suite_name": "", "test_suite_describe": "", "tester": "", "test_item":[]}
-    var itemModel={"test_item_id": -1, "item_name": "", "test_item_desc": "", "suite_id": 0, "driver": "", "test_step": "", "environment": "{}", "item_sequence": 0}
+    var itemModel={"test_item_id": -1, "item_name": "", "test_item_desc": "", "suite_id": 0, "driver": "", "test_step": [], "environment": "{}", "item_sequence": 0}
     var stepModel={"data_id":-1, "data_desc": "", "data": "{}", "expect_data": "{}", "type": 1, "item_id": 0, "result_log": "", "step_sequence": 0}
     Iinit()

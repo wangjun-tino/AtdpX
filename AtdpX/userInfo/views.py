@@ -7,13 +7,16 @@ from models import UserInfo
 from django.http import HttpResponse
 from django.forms.models import model_to_dict
 from common.token import *
+from common.logger import getDefaultLogger
 
 def userlistQuery(request):
+    logging=getDefaultLogger()
     token=getParamFromRequest(request,'token')
-    print token
+    logging.info(u'tokon:%s',str(token))
     tokenUserid=tokenToUserid(token)
     userInfoName=UserInfo.objects.filter(userId=tokenUserid)
     if not userInfoName:
+        logging.info(u'登录票据验证失败，请更换登录用户！！！')
         return errResponse(U"登录票据验证失败，请更换登录用户！！！")
     try:
         selfUsers=UserInfo.objects.all()
@@ -25,12 +28,14 @@ def userlistQuery(request):
             print queryResultRow
             queryResult.append(queryResultRow)
     except:
+         logging.info(U"未找到用户列表")
          return errResponse(U"未找到用户列表")
     return sucResponse(queryResult)
 def userUpdate(request):
+     logging=getDefaultLogger()
      parameter=getParamFromRequest(request,'parameter')
      parameter=json.loads(parameter)
-     print type(parameter)
+     logging.info(str(type(parameter)))
      try:
         if not parameter['username']:
             return errResponse(u"用户名不能为空")
@@ -43,7 +48,7 @@ def userUpdate(request):
             response=errResponse(U"用户ID为空,新增成功",0)
         userInfo=UserInfo.objects.filter(userId=parameter['userid'])
         if not userInfo and not userInfoName :
-            print '修改用户信息不存在'
+            logging.info(u'修改用户信息不存在')
             UserInfo.objects.create(password=parameter['password'],userName=parameter['username'],realName=parameter['realname'],age=parameter['age'])
             response=errResponse(U"用户信息不存在,新增成功",0)
         elif not userInfo and  userInfoName :
@@ -52,9 +57,11 @@ def userUpdate(request):
             UserInfo.objects.filter(userId=parameter['userid']).update(password=parameter['password'],userName=parameter['username'],realName=parameter['realname'],age=parameter['age'])
             response=errResponse(U"用户信息修改成功",0)
      except Exception as e:
+        logging.info(e)
         return errResponse(traceback.format_exc())
      return response
 def userDelete(request):
+     logging=getDefaultLogger()
      userid=getParamFromRequest(request,'userid')
      try:
         if not userid:
@@ -66,9 +73,11 @@ def userDelete(request):
             UserInfo.objects.filter(userId=userid).delete()
             response=errResponse(U"用户删除成功",0)
      except Exception as e:
+        logging.info(e)
         return errResponse(traceback.format_exc())
      return response
 def userLogin(request):
+    logging=getDefaultLogger()
     password=getParamFromRequest(request,'password')
     username=getParamFromRequest(request,'username')
     userInfo=UserInfo.objects.filter(userName=username,password=password).values()
@@ -76,6 +85,6 @@ def userLogin(request):
         return errResponse(u"用户名或密码错误")
     else:
         token=useridToToken(userInfo[0]['userId'])
-        print token
+        logging.info(str(token))
         data={"token":token}
     return sucResponse(data)

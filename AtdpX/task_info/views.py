@@ -8,10 +8,13 @@ from userInfo.models import UserInfo
 from django.http import HttpResponse
 from django.forms.models import model_to_dict
 from common.token import *
+from common.logger import getDefaultLogger
+from enveriment.run import runner
 
 def taskQuery(request):
+    logging=getDefaultLogger()
     token=getParamFromRequest(request,'token')
-    print token
+    logging.info(token)
     tokenUserid=tokenToUserid(token)
     userInfoName=UserInfo.objects.filter(userId=tokenUserid)
     if not userInfoName:
@@ -27,13 +30,14 @@ def taskQuery(request):
             print queryResultRow
             queryResult.append(queryResultRow)
     except Exception as e:
-         print e
+         logging.info(e)
          return errResponse(U"未找到任务列表")
     return sucResponse(queryResult)
 def taskUpdate(request):
+     logging=getDefaultLogger()
      parameter=getParamFromRequest(request,'parameter')
      parameter=json.loads(parameter)
-     print type(parameter)
+     logging.info(parameter)
      try:
         if not parameter['task_name']:
             return errResponse(u"任务名不能为空")
@@ -44,7 +48,7 @@ def taskUpdate(request):
             response=errResponse(U"任务ID为空,新增成功",0)
         taskInfo=TaskInfo.objects.filter(task_id=parameter['task_id'])
         if not taskInfo and not TaskInfoName and  parameter['task_id'] :
-            print '修改任务信息不存在'
+            logging.info(u'修改任务信息不存在')
             TaskInfo.objects.create(pars=parameter['pars'],task_name=parameter['task_name'],task_type=1,status=1)
             response=errResponse(U"任务信息不存在,新增成功",0)
         elif not taskInfo and  TaskInfoName :
@@ -53,9 +57,11 @@ def taskUpdate(request):
             TaskInfo.objects.filter(task_id=parameter['task_id']).update(pars=parameter['pars'],task_name=parameter['task_name'])
             response=errResponse(U"任务信息修改成功",0)
      except Exception as e:
+        logging.info(e)
         return errResponse(traceback.format_exc())
      return response
 def taskDelete(request):
+     logging=getDefaultLogger()
      id=getParamFromRequest(request,'task_id')
      try:
         if not id:
@@ -67,5 +73,17 @@ def taskDelete(request):
             TaskInfo.objects.filter(task_id=id).delete()
             response=errResponse(U"任务删除成功",0)
      except Exception as e:
+        logging.info(e)
+        return errResponse(traceback.format_exc())
+     return response
+def taskRunner(request):
+     logging=getDefaultLogger()
+     parameter=getParamFromRequest(request,'parameter')
+     parameter=json.loads(parameter)
+     try:
+        runner(parameter['suites'])
+        response=u"任务开始执行"
+     except Exception as e:
+        logging.info(e)
         return errResponse(traceback.format_exc())
      return response

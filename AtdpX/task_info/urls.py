@@ -7,7 +7,8 @@ from task_info.views import *
 urlpatterns = [
       url(r'^query/$', taskQuery),
       url(r'^update/$', taskUpdate),
-      url(r'^delete/$', taskDelete)
+      url(r'^delete/$', taskDelete),
+      url(r'^runner/$', taskRunner)
 
 ]
 
