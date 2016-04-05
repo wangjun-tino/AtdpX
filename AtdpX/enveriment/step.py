@@ -16,11 +16,21 @@ class TestStep(object):
         # 测试关键字
         self.__commandKey = stepdata['type']
         # 输入参数
-        self.__param      = 'data' in stepdata and 'expect_data' in stepdata and {"data":json.loads(stepdata['data']),"expect_data":json.loads(stepdata['expect_data'])} \
-                            or 'data' in stepdata and 'expect_data' not in stepdata and {"data":json.loads(stepdata['data'])} or None
+        if not self.__commandKey.startswith('Test_'):
+            if 'data' in stepdata and 'expect_data' in stepdata and {"data":json.loads(stepdata['data']),"expect_data":json.loads(stepdata['expect_data'])}:
+                self.__param ={"data":json.loads(stepdata['data']),"expect_data":json.loads(stepdata['expect_data'])}
+            elif  'data' in stepdata and 'expect_data' not in stepdata and {"data":json.loads(stepdata['data'])}:
+                self.__param ={"data":json.loads(stepdata['data'])}
+            else:
+                self.__param = None
         # 接口返回预期值
-        if self.__commandKey.startswith('Test_API_'):
-            self.__response   ='expect_data' in stepdata and json.loads(stepdata['expect_data']) or None
+        if self.__commandKey.startswith('Test_API_') or self.__commandKey.startswith('Test_Login') :
+            if 'data' in stepdata and {"data":json.loads(stepdata['data'])}:
+                self.__param =json.loads(stepdata['data'])
+            if 'expect_data' in stepdata and json.loads(stepdata['expect_data']):
+                self.__response=json.loads(stepdata['expect_data'])
+            else:
+                self.__response   = None
         else:
             self.__response=None
         # 所需的测试驱动
@@ -40,11 +50,11 @@ class TestStep(object):
         ret = False
         try:
             if self.__commandKey.startswith('Test_API_'):
-                testMethod = getattr(self.__testdriver, 'Test_Interface_Request')
+                testMethod = getattr(self.__testdriver, 'Test_Interface_Request1')
             else:
                 testMethod = getattr(self.__testdriver, self.__commandKey)
             ret =  testMethod(self.__param, self.__commandKey, self.__response)
-            if not ret: 
+            if not ret:
                 raise Exception('')
             else:
                 self.Log.info("测试步骤【%s】执行成功" %self.__commandKey.encode('utf-8'))

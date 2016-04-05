@@ -18,7 +18,7 @@ class InterFaceDriver(TestDriverBase):
         '''登陆返回access_token'''
         assert(param)
 
-        url = SysConfig.object.filter(parameterKey='Test_Login').values('parameterValues')[0]['parameterValues']
+        url = SysConfig.objects.filter(parameterName='Test_Login').values('parameterValues')[0]['parameterValues']
         retResult = sendRequest(url, param,Log=self.Log)
         if not retResult: return False
         response = json.loads(retResult)

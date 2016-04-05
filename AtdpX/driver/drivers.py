@@ -28,22 +28,22 @@ class TestDriverFactory(object):
 
 class TestDriverBase(object):
     def __init__(self):
-        self.steps
+        self.steps=None
         self.Log=None
-        self.Mysqlhander
+        self.Mysqlhander=None
         self.verifyData=[]
         self.caseData=[]
         self.sysConfigKey=[]
 
     def setup(self, testenv):
         '''测试驱动的属性配置'''
-        self.Mysqlhander=MysqldbHelper(testenv['mysql'])
+        print testenv
+        self.Mysqlhander=MysqldbHelper(testenv['environment']['mysql'])
         self.steps=testenv['steps']
         self.Log=getDefaultLogger()
-        sysConfigKeys=SysConfig.object.filter(parameterName__contains='Test_API_').values('parameterName','parameterValues')
+        sysConfigKeys=SysConfig.objects.filter(parameterName__contains='Test_API_').values('parameterName','parameterValues')
         for sysConfigKey in sysConfigKeys:
             self.sysConfigKey.append({sysConfigKey['parameterName']:sysConfigKey['parameterValues']})
-    @property
 
     def Util_AddMysqlData(self, param, *args):
         '''根据不同的数据模型，插入对应的测试用数据'''
