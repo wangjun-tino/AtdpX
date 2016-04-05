@@ -63,13 +63,10 @@ class TestDriverBase(object):
             self.verifyData.append(param['expect_data'])
         return True
 
-
-    def Util_RemoveMysqlData(self):
+    def Util_RemoveMysqlData(self,params,*args):
         '''根据不同的数据模型，插入对应的测试用数据'''
         for param in self.caseData:
-            if param.get('data')==None:
-                raise ValueError("data对象不存在")
-            sql=self.CreatMySqlSentence(param['data'],'delete')
+            sql=self.CreatMySqlSentence(param,'delete')
             if not sql:
                 raise ValueError("语句生成结果为空")
             try:
@@ -77,9 +74,9 @@ class TestDriverBase(object):
             except Exception as e:
                 self.Log.info(e)
         for expect in self.verifyData:
-            if param.get('expect_data')==None:
-                raise ValueError("expect_data对象不存在")
-            sql2=self.CreatMySqlSentence(param['expect_data'],'KeyDelete')
+            if not expect:
+                continue
+            sql2=self.CreatMySqlSentence(expect,'KeyDelete')
             if not sql2:
                 raise ValueError("语句生成结果为空")
             try:

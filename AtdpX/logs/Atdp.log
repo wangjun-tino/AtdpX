@@ -341,3 +341,60 @@
 [2016-04-04 23:59:03,648](INFO)[funcname:sendRequest] [processNum:7796 threadNum:6772] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
 [2016-04-04 23:59:03,667](INFO)[funcname:userLogin] [processNum:7796 threadNum:3352] [lineno:88] : 057065140L
 [2016-04-04 23:59:03,673](INFO)[funcname:run] [processNum:7796 threadNum:6772] [lineno:64] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:32:57,769](INFO)[funcname:runner] [processNum:5868 threadNum:1608] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:32:57,951](INFO)[funcname:runner] [processNum:5868 threadNum:1608] [lineno:40] :  正常登录测试项执行 执行测试步骤数：2
+[2016-04-05 23:32:57,973](INFO)[funcname:CreatMySqlSentence] [processNum:5868 threadNum:1608] [lineno:204] : 构建测试用SQL语句失败：输入参数中无testData属性，请检查输入参数的正确性
+[2016-04-05 23:32:58,043](INFO)[funcname:run] [processNum:5868 threadNum:1608] [lineno:64] : 测试步骤【Util_AddMysqlData】执行失败，失败原因：语句生成结果为空
+[2016-04-05 23:32:58,071](INFO)[funcname:sendRequest] [processNum:5868 threadNum:1608] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:32:58,117](INFO)[funcname:userLogin] [processNum:5868 threadNum:4856] [lineno:88] : 057065140L
+[2016-04-05 23:32:58,130](INFO)[funcname:run] [processNum:5868 threadNum:1608] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:34:18,197](INFO)[funcname:runner] [processNum:5868 threadNum:1632] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:34:18,230](INFO)[funcname:runner] [processNum:5868 threadNum:1632] [lineno:40] :  正常登录测试项执行 执行测试步骤数：2
+[2016-04-05 23:34:18,246](INFO)[funcname:CreatMySqlSentence] [processNum:5868 threadNum:1632] [lineno:206] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-05 23:34:18,288](INFO)[funcname:run] [processNum:5868 threadNum:1632] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-05 23:34:18,298](INFO)[funcname:sendRequest] [processNum:5868 threadNum:1632] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:34:18,311](INFO)[funcname:userLogin] [processNum:5868 threadNum:3320] [lineno:88] : 057065140L
+[2016-04-05 23:34:18,312](INFO)[funcname:run] [processNum:5868 threadNum:1632] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:36:59,601](INFO)[funcname:userLogin] [processNum:5868 threadNum:3344] [lineno:88] : 057065140L
+[2016-04-05 23:38:53,216](INFO)[funcname:runner] [processNum:5868 threadNum:1852] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:38:53,325](INFO)[funcname:runner] [processNum:5868 threadNum:1852] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-05 23:38:53,355](INFO)[funcname:CreatMySqlSentence] [processNum:5868 threadNum:1852] [lineno:206] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-05 23:38:53,407](INFO)[funcname:run] [processNum:5868 threadNum:1852] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-05 23:38:53,440](INFO)[funcname:sendRequest] [processNum:5868 threadNum:1852] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:38:53,525](INFO)[funcname:userLogin] [processNum:5868 threadNum:5504] [lineno:88] : 057065140L
+[2016-04-05 23:38:53,528](INFO)[funcname:run] [processNum:5868 threadNum:1852] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:38:53,536](INFO)[funcname:run] [processNum:5868 threadNum:1852] [lineno:64] : 测试步骤【Util_RemoveMysqlData】执行失败，失败原因：Util_RemoveMysqlData() takes exactly 1 argument (4 given)
+[2016-04-05 23:39:55,976](INFO)[funcname:runner] [processNum:3952 threadNum:4872] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:39:56,048](INFO)[funcname:runner] [processNum:3952 threadNum:4872] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-05 23:39:56,068](INFO)[funcname:CreatMySqlSentence] [processNum:3952 threadNum:4872] [lineno:205] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-05 23:39:56,098](INFO)[funcname:run] [processNum:3952 threadNum:4872] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-05 23:39:56,114](INFO)[funcname:sendRequest] [processNum:3952 threadNum:4872] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:39:56,158](INFO)[funcname:userLogin] [processNum:3952 threadNum:3312] [lineno:88] : 057065140L
+[2016-04-05 23:39:56,161](INFO)[funcname:run] [processNum:3952 threadNum:4872] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:39:56,167](INFO)[funcname:run] [processNum:3952 threadNum:4872] [lineno:64] : 测试步骤【Util_RemoveMysqlData】执行失败，失败原因：data对象不存在
+[2016-04-05 23:41:26,086](INFO)[funcname:runner] [processNum:1400 threadNum:5408] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:41:26,164](INFO)[funcname:runner] [processNum:1400 threadNum:5408] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-05 23:41:26,177](INFO)[funcname:CreatMySqlSentence] [processNum:1400 threadNum:5408] [lineno:205] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-05 23:41:26,209](INFO)[funcname:run] [processNum:1400 threadNum:5408] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-05 23:41:26,239](INFO)[funcname:sendRequest] [processNum:1400 threadNum:5408] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:41:26,256](INFO)[funcname:userLogin] [processNum:1400 threadNum:1388] [lineno:88] : 057065140L
+[2016-04-05 23:41:26,260](INFO)[funcname:run] [processNum:1400 threadNum:5408] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:41:26,266](INFO)[funcname:run] [processNum:1400 threadNum:5408] [lineno:64] : 测试步骤【Util_RemoveMysqlData】执行失败，失败原因：data对象不存在
+[2016-04-05 23:43:30,532](INFO)[funcname:runner] [processNum:1320 threadNum:4856] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:43:30,596](INFO)[funcname:runner] [processNum:1320 threadNum:4856] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-05 23:43:30,607](INFO)[funcname:CreatMySqlSentence] [processNum:1320 threadNum:4856] [lineno:201] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-05 23:43:30,663](INFO)[funcname:run] [processNum:1320 threadNum:4856] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-05 23:43:30,693](INFO)[funcname:sendRequest] [processNum:1320 threadNum:4856] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:43:30,734](INFO)[funcname:userLogin] [processNum:1320 threadNum:5876] [lineno:88] : 057065140L
+[2016-04-05 23:43:30,739](INFO)[funcname:run] [processNum:1320 threadNum:4856] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:43:30,747](INFO)[funcname:CreatMySqlSentence] [processNum:1320 threadNum:4856] [lineno:201] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-05 23:43:30,783](INFO)[funcname:run] [processNum:1320 threadNum:4856] [lineno:64] : 测试步骤【Util_RemoveMysqlData】执行失败，失败原因：输入参数中无table属性，请检查输入参数的正确性
+[2016-04-05 23:46:11,302](INFO)[funcname:runner] [processNum:5340 threadNum:5868] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-05 23:46:11,365](INFO)[funcname:runner] [processNum:5340 threadNum:5868] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-05 23:46:11,374](INFO)[funcname:CreatMySqlSentence] [processNum:5340 threadNum:5868] [lineno:203] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-05 23:46:11,421](INFO)[funcname:run] [processNum:5340 threadNum:5868] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-05 23:46:11,431](INFO)[funcname:sendRequest] [processNum:5340 threadNum:5868] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-05 23:46:11,463](INFO)[funcname:userLogin] [processNum:5340 threadNum:5988] [lineno:88] : 057065140L
+[2016-04-05 23:46:11,467](INFO)[funcname:run] [processNum:5340 threadNum:5868] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-05 23:46:11,490](INFO)[funcname:CreatMySqlSentence] [processNum:5340 threadNum:5868] [lineno:203] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-05 23:46:11,519](INFO)[funcname:run] [processNum:5340 threadNum:5868] [lineno:60] : 测试步骤【Util_RemoveMysqlData】执行成功
