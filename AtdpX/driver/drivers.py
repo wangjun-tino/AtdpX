@@ -48,27 +48,33 @@ class TestDriverBase(object):
     def Util_AddMysqlData(self, param, *args):
         '''根据不同的数据模型，插入对应的测试用数据'''
         assert(param)
+        retLog="Pass"
         if param.get('data')==None:
-            raise ValueError("data对象不存在")
+            retLog="data对象不存在"
+            return False,retLog
         sql=self.CreatMySqlSentence(param['data'],'insert')
         if not sql:
-            raise ValueError("语句生成结果为空")
+            retLog="语句生成结果为空"
+            return False,retLog
         try:
             self.Mysqlhander.executeSQL(sql)
         except Exception as e:
             self.Log.info(e)
+            retLog=e
         if param.get('data')!=None and param['data']!=None:
             self.caseData.append(param['data'])
         if param.get('expect_data')!=None and param['expect_data']!=None:
             self.verifyData.append(param['expect_data'])
-        return True
+        return True,retLog
 
     def Util_RemoveMysqlData(self,params,*args):
         '''根据不同的数据模型，插入对应的测试用数据'''
+        retLog="Pass"
         for param in self.caseData:
             sql=self.CreatMySqlSentence(param,'delete')
             if not sql:
-                raise ValueError("语句生成结果为空")
+                retLog="语句生成结果为空"
+                return False,retLog
             try:
                 self.Mysqlhander.executeSQL(sql)
             except Exception as e:
@@ -78,12 +84,14 @@ class TestDriverBase(object):
                 continue
             sql2=self.CreatMySqlSentence(expect,'KeyDelete')
             if not sql2:
-                raise ValueError("语句生成结果为空")
+                retLog="语句生成结果为空"
+                return False,retLog
             try:
                 self.Mysqlhander.executeSQL(sql2)
             except Exception as e:
                 self.Log.info(e)
-        return True
+                retLog=e
+        return True,retLog
 
     def CreatMySqlSentence(self,caseData,type='insert'):
         '''根据测试数据构建测试用SQL语句'''

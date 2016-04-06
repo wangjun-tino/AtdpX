@@ -5,6 +5,7 @@ __author__ = 'zhouguangming'
 
 import os, sys,json
 from common.logger import getDefaultLogger
+from testCase.models import TestStep as TestStepModels
 
 class TestStep(object):
     '''测试步骤组合成为测试用例
@@ -15,6 +16,7 @@ class TestStep(object):
     def __init__(self, stepdata, testdriver):
         # 测试关键字
         self.__commandKey = stepdata['type']
+        self.stepid=stepdata['data_id']
         # 输入参数
         if not self.__commandKey.startswith('Test_'):
             if 'data' in stepdata and 'expect_data' in stepdata and {"data":json.loads(stepdata['data']),"expect_data":json.loads(stepdata['expect_data'])}:
@@ -53,16 +55,19 @@ class TestStep(object):
                 testMethod = getattr(self.__testdriver, 'Test_Interface_Request1')
             else:
                 testMethod = getattr(self.__testdriver, self.__commandKey)
-            ret =  testMethod(self.__param, self.__commandKey, self.__response)
+            ret,retFlag =  testMethod(self.__param, self.__commandKey, self.__response)
             if not ret:
-                raise Exception('')
+                retFlag="测试结果为null"
             else:
+                retFlag="Pass"
                 self.Log.info("测试步骤【%s】执行成功" %self.__commandKey.encode('utf-8'))
         except Exception as e:
             errLog = "测试步骤【%s】执行失败" %self.__commandKey.encode('utf-8')
             if e.message: errLog += '，失败原因：%s' %e
             self.Log.info(errLog)
+            retFlag=errLog
             getattr(self.__testdriver, "Util_RemoveData")(self.__param, None)
             #getattr(self.__testdriver, "Util_ApiMySqlRemoveData")(self.__param, None)
         finally:
+            TestStepModels.objects.filter(data_id=self.stepid).update(result_log=retFlag)
             return ret

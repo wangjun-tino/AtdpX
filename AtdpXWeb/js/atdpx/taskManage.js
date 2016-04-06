@@ -65,6 +65,24 @@ $.support.cors = true;
             }
         });
     }
+    //删除配置
+    function testRunner(configData) {
+        $.support.cors = true;
+        $.ajax({
+            type: "GET",
+            data: {"parameter":JSON.stringify({"suites":eval(configData["pars"]),"task_id":configData["task_id"]})},
+            dataType: 'json',
+            async: false,//同异步方式
+            cache: false,
+            url: UrlHeader + "/AtdpX/task_info/runner/",
+            success: function (data) {
+                alert(data['errmsg'])
+            },
+            error: function () {
+                alert("页面删除出现异常");
+            }
+        });
+    }
 //公共函数区
     //转json格式
     function TrunJsonGroup(jsonDataArray) {
@@ -111,7 +129,7 @@ function Table() {
         this.html += "</tr>";
         for (var i = 0; i < this.RowsColnumValues.length; i++) {
             var idTemp=this.idKey+"-" + String((page - 1) * this.pageNum + i)
-            this.html += "<tr id=\""+idTemp+ "-tr\" onclick=\""+this.actionKey+"('"+idTemp+ "-tr')\" ondblclick=\""+this.actionKey+"D2('"+idTemp+ "-tr')\">";
+            this.html += "<tr id=\""+idTemp+ "-tr\" onclick=\""+this.actionKey+"('"+idTemp+ "-tr')\" ondblclick=\""+this.actionKey+"D2("+i+")\">";
             for (key in this.RowsColnumValues[0]) {
                 if (key in this.hideKey)
                     this.html += "<td hidden=\"hidden\">" + this.RowsColnumValues[i][key] + "</td>";
@@ -179,7 +197,8 @@ function Table() {
         });
     //双击修改事件
     function FindConfigDataD2(id){
-        alert('执行中！！！')
+        testRunner(values[id])
+        location.reload();
     };
     //config单击
     function FindConfigData(id){

@@ -179,6 +179,7 @@ $("#submit-button").click(function () {
     SubmitData["realname"] = $("#realname").val();
     SubmitData["age"] = $("#uaerage").val();
     SubmitData["userid"] = userId;
+    userUpdate(SubmitData)
     $("#user-edit-box2").css("display", "none")
     location.reload();
 });

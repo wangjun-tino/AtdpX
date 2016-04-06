@@ -1,6 +1,6 @@
 # Create your views here.
 #-*- coding:utf8 -*-
-import json,traceback
+import json,traceback,time
 from common.commonUtil import getParamFromRequest
 from common.response import errResponse,sucResponse
 from models import TaskInfo
@@ -10,6 +10,7 @@ from django.forms.models import model_to_dict
 from common.token import *
 from common.logger import getDefaultLogger
 from enveriment.run import runner
+from testCase.models import *
 
 def taskQuery(request):
     logging=getDefaultLogger()
@@ -80,10 +81,13 @@ def taskRunner(request):
      logging=getDefaultLogger()
      parameter=getParamFromRequest(request,'parameter')
      parameter=json.loads(parameter)
+     TaskInfo.objects.filter(task_id=parameter['task_id']).update(status=2,begin_time=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
      try:
-        runner(parameter['suites'])
-        response=u"任务开始执行"
+        retResult=runner(parameter['suites'])
+        response=errResponse(retResult,0)
+        TaskInfo.objects.filter(task_id=parameter['task_id']).update(status=3,end_time=time.strftime('%Y%m%d%H%M%S',time.localtime(time.time())))
      except Exception as e:
         logging.info(e)
+        TaskInfo.objects.filter(task_id=parameter['task_id']).update(status=4,end_time=time.strftime('%Y%m%d%H%M%S',time.localtime(time.time())))
         return errResponse(traceback.format_exc())
      return response

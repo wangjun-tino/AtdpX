@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS `sys_config` (
 INSERT INTO `sys_config` (`id`, `parameterName`, `parameterValues`) VALUES
 	(1, 'swich', '0'),
 	(2, 'hellow', '1'),
-	(3, 'Test_Login', 'http://127.0.0.2:8000/AtdpX/userInfo/login/'),
-	(4, 'Test_API_Login', 'http://127.0.0.2:8000/AtdpX/userInfo/login/');
+	(3, 'Test_Login', 'http://127.0.0.1:8000/AtdpX/userInfo/login/'),
+	(4, 'Test_API_Login', 'http://127.0.0.1:8000/AtdpX/userInfo/login/');
 /*!40000 ALTER TABLE `sys_config` ENABLE KEYS */;
 
 
@@ -59,11 +59,11 @@ CREATE TABLE IF NOT EXISTS `task_info` (
   PRIMARY KEY (`task_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1009 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='任务信息表';
 
--- 正在导出表  atdpx_db.task_info 的数据：~7 rows (大约)
+-- 正在导出表  atdpx_db.task_info 的数据：~0 rows (大约)
 /*!40000 ALTER TABLE `task_info` DISABLE KEYS */;
 INSERT INTO `task_info` (`task_id`, `pars`, `task_name`, `task_type`, `status`, `begin_time`, `end_time`) VALUES
-	(1000, '[1,2]', '调试任务', '0', '1', '2016-03-24 21:36:40', NULL),
-	(1001, '[2,3]', 'test2', '', '', '0000-00-00 00:00:00', ''),
+	(1000, '[2]', '调试任务', '0', '3', '2016-04-06 22:11:31', '20160406221132'),
+	(1001, '[2,3]', 'test2', '', '3', '0000-00-00 00:00:00', '20160406220830'),
 	(1003, '[1,2]', 'dfsdfds', '', '', '0000-00-00 00:00:00', ''),
 	(1005, '[1,2]', 'safdsfa1', '1', '1', '0000-00-00 00:00:00', ''),
 	(1006, 'wer', 'wer', '1', '1', '0000-00-00 00:00:00', ''),
@@ -137,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `test_item` (
 /*!40000 ALTER TABLE `test_item` DISABLE KEYS */;
 INSERT INTO `test_item` (`test_item_id`, `item_name`, `test_item_desc`, `suite_id`, `driver`, `test_step`, `environment`, `item_sequence`) VALUES
 	(1, 'XX平台登录', '用于测试XX平台登录功能的测试项', 1, 'InterFaceDiver', '[]', '"\\"\\\\\\"\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"null\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\"\\\\\\"\\""', 105),
-	(11, ' 正常登录测试', '用于测试用户名密码正确时，登录接口的响应结果', 2, 'InterFaceDriver', '[]', '"{}"', 105);
+	(11, ' 正常登录测试', '用于测试用户名密码正确时，登录接口的响应结果', 2, 'InterFaceDriver', '[]', '"\\"{\'mysql\': {\'name\': \'atdpx_db\',\'user\': \'root\',\'passwd\': \'\', \'host\': \'127.0.0.1\', \'port\': 3306}}\\""', 105);
 /*!40000 ALTER TABLE `test_item` ENABLE KEYS */;
 
 
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `test_step` (
   PRIMARY KEY (`data_id`),
   KEY `FK_test_data_test_item` (`item_id`),
   CONSTRAINT `FK_test_data_test_item` FOREIGN KEY (`item_id`) REFERENCES `test_item` (`test_item_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='测试步骤表';
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='测试步骤表';
 
 -- 正在导出表  atdpx_db.test_step 的数据：~6 rows (大约)
 /*!40000 ALTER TABLE `test_step` DISABLE KEYS */;
@@ -163,9 +163,10 @@ INSERT INTO `test_step` (`data_id`, `data_desc`, `data`, `expect_data`, `type`, 
 	(2, '测试数据2', 'null', 'null', 'Util_RemoveData', 1, '', 0000000000205),
 	(4, '测试数据3', 'null', 'null', 'Test_Login', 1, '', 0000000000305),
 	(5, '测试数据4', 'null', 'null', 'Test_UserQuery', 1, '', 0000000000405),
-	(12, '登录数据构建', '\n{"table":"user_info","data":{"username":"wangsan","password":"123456"}}', '{}', 'Util_AddMysqlData', 11, '', 0000000000105),
-	(13, '测试登录接口', '{"param":{"username":"wangjun","password":"123456"}}', '{}', 'Test_Login', 11, '', 0000000000205),
-	(14, '排序测试', 'null', 'null', 'Selected', 1, '', 0000000000204);
+	(12, '登录数据构建', '\n{"table":"user_info","testData":{"username":"wangsan","password":"123456"}}', '{}', 'Util_AddMysqlData', 11, 'Pass', 0000000000105),
+	(13, '测试登录接口', '{"username":"wangjun","password":"123456"}', '{}', 'Test_Login', 11, 'Pass', 0000000000205),
+	(14, '排序测试', 'null', 'null', 'Selected', 1, '', 0000000000204),
+	(15, '测试数据清理', '{}', '{}', 'Util_RemoveMysqlData', 11, 'Pass', 0000000000305);
 /*!40000 ALTER TABLE `test_step` ENABLE KEYS */;
 
 
@@ -195,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `user_info` (
   `realname` varchar(45) COLLATE utf8_bin DEFAULT NULL,
   `age` int(11) DEFAULT '0',
   PRIMARY KEY (`userid`)
-) ENGINE=InnoDB AUTO_INCREMENT=1014 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='用户信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=1040 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='用户信息表';
 
 -- 正在导出表  atdpx_db.user_info 的数据：~12 rows (大约)
 /*!40000 ALTER TABLE `user_info` DISABLE KEYS */;
@@ -211,7 +212,8 @@ INSERT INTO `user_info` (`userid`, `username`, `password`, `realname`, `age`) VA
 	(1008, 'wangjun2', '5', '王君2', 30),
 	(1009, 'wangyon', '6', '王勇', 40),
 	(1010, 'wangyue', '7', '王悦', 40),
-	(1013, 'wangbing', '123456', '王兵', 31);
+	(1013, 'wangbing', '123456', '王兵', 31),
+	(1039, 'admin', '123456', '管理员', 0);
 /*!40000 ALTER TABLE `user_info` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

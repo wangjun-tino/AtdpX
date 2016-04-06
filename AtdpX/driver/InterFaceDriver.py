@@ -17,7 +17,7 @@ class InterFaceDriver(TestDriverBase):
     def Test_Login(self, param, *args):
         '''登陆返回access_token'''
         assert(param)
-
+        retLog="Pass"
         url = SysConfig.objects.filter(parameterName='Test_Login').values('parameterValues')[0]['parameterValues']
         retResult = sendRequest(url, param,Log=self.Log)
         if not retResult: return False
@@ -25,7 +25,7 @@ class InterFaceDriver(TestDriverBase):
         if response and response.get('errmsg','')== 'success' :
             if 'data' in response:
                 self.__token = response['data'].get('token','')
-                return True
+                return True,retLog
             else:
                 errInfo = 'URL: %s返回值中缺少【data】必要字段' %url.encode('utf-8')
                 self.Log.info(errInfo)
@@ -34,7 +34,8 @@ class InterFaceDriver(TestDriverBase):
                                 'testStatus':False, \
                                 'failLog':[errInfo]}
                 self.Log.info(outputResult)
-                return False
+                retLog=errInfo+str(outputResult)
+                return False,retLog
         else:
             errInfo = 'URL: %s执行失败：%s' %(url.encode('utf-8'),\
                                          json.dumps(response,ensure_ascii=False).encode('utf-8'))
@@ -43,17 +44,19 @@ class InterFaceDriver(TestDriverBase):
                             'execTime':time.strftime('%Y%m%d%H%M%S',time.localtime(time.time())), \
                             'testStatus':False, \
                             'failLog':[errInfo]}
-            self.Log.info(outputResult)
-            return False
+            retLog=errInfo+str(outputResult)
+            return False,retLog
 
     def Test_Interface_Request(self, param,*args):
         assert(param)
+        retLog="Pass"
         if param.get('token')!=None:
             param['token']=self.__token
         #获取自定义参数
         if args[0] not in self.sysConfigKey:
             self.Log.info('未在测试规则库中找到行编批处理URL请求')
-            return None
+            retLog="未在测试规则库中找到行编批处理URL请求"
+            return False,retLog
         url = self.sysConfigKey[args[0]]
         urlType = 'GET'
         retResult = sendRequest(url, param,type=urlType,Log=self.Log)
@@ -61,7 +64,7 @@ class InterFaceDriver(TestDriverBase):
         response = json.loads(retResult)
         if args[1] == None:
             if response and response.get('errmsg','') == 'success':
-                return response
+                return True,retLog
             else:
                 errInfo = 'URL：%s执行失败：%s' %(url.encode('utf-8'), \
                                             json.dumps(response,ensure_ascii=False).encode('utf-8'))
@@ -71,7 +74,8 @@ class InterFaceDriver(TestDriverBase):
                                 'testStatus':False, \
                                 'failLog':[errInfo]}
                 self.Log.info(outputResult)
-                return None
+                retLog=str(outputResult)
+                return True,retLog
         else:
             diffResult=self.DiffM(args[1],response)
             if len(diffResult)==0 :
@@ -85,6 +89,7 @@ class InterFaceDriver(TestDriverBase):
                             'ExpectData':args[1]}
                 self.Log.info('测试数据验证失败，详细信息：'+json.dumps(outputResult, ensure_ascii=False).encode('utf-8'))
                 self.Log.info(outputResult)
-            return retPass
+                retLog=str(outputResult)
+            return retPass,retLog
 
 
