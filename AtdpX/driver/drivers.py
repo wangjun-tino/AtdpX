@@ -61,6 +61,7 @@ class TestDriverBase(object):
         except Exception as e:
             self.Log.info(e)
             retLog=e
+            return False,retLog
         if param.get('data')!=None and param['data']!=None:
             self.caseData.append(param['data'])
         if param.get('expect_data')!=None and param['expect_data']!=None:
@@ -91,8 +92,28 @@ class TestDriverBase(object):
             except Exception as e:
                 self.Log.info(e)
                 retLog=e
+                return False,retLog
         return True,retLog
-
+    def Util_VerifyResult(self):
+        retLog="Pass"
+        for expect in self.verifyData:
+            if not expect:
+                continue
+            sql2=self.CreatMySqlSentence(expect,'select')
+            if not sql2:
+                retLog="语句生成结果为空"
+                return False,retLog
+            try:
+                actual=self.Mysqlhander.executeSQL(sql2)
+                diffResult = self.verifyData(expect, actual[0])
+                outputResult = {'execTime':time.strftime('%Y%m%d%H%M%S',time.localtime(time.time())), \
+                                        'failLog':diffResult}
+                retLog=str(outputResult)
+            except Exception as e:
+                self.Log.info(e)
+                retLog=e
+                return False,retLog
+        return True,retLog
     def CreatMySqlSentence(self,caseData,type='insert'):
         '''根据测试数据构建测试用SQL语句'''
         logging=getDefaultLogger()
