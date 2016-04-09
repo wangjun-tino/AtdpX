@@ -501,7 +501,7 @@ function Table() {
     }
     var hideKeySuite={"test_item":1,"test_suite_describe":1}
     var hideKeyItem={"test_step":1,"suite_id":1,"driver":1,"environment":1,"test_item_desc":1}
-    var hideKeyStep={"data":1,"expect_data":1,"item_id":1}
+    var hideKeyStep={"data_id":1,"data":1,"expect_data":1,"item_id":1}
     var itemTempCollection={};
     var stepTempCollection={};
     var suitePage=1;

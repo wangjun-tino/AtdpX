@@ -1,0 +1,336 @@
+[2016-04-06 13:38:49,786](INFO)[funcname:userLogin] [processNum:7484 threadNum:2300] [lineno:88] : 057065140L
+[2016-04-06 13:38:58,779](INFO)[funcname:taskQuery] [processNum:7484 threadNum:8108] [lineno:17] : 57065140
+[2016-04-06 13:39:10,937](INFO)[funcname:taskUpdate] [processNum:7484 threadNum:5000] [lineno:40] : {u'pars': u'[2]', u'task_id': u'1000', u'task_name': u'\u8c03\u8bd5\u4efb\u52a1'}
+[2016-04-06 13:39:12,301](INFO)[funcname:taskQuery] [processNum:7484 threadNum:7040] [lineno:17] : 57065140
+[2016-04-06 13:40:11,088](INFO)[funcname:userlistQuery] [processNum:7484 threadNum:6780] [lineno:15] : tokon:57065140
+[2016-04-06 13:40:15,230](INFO)[funcname:taskQuery] [processNum:7484 threadNum:2148] [lineno:17] : 57065140
+[2016-04-06 13:40:21,033](INFO)[funcname:taskUpdate] [processNum:7484 threadNum:6548] [lineno:40] : {u'pars': u'[2]', u'task_id': u'1000', u'task_name': u'\u8c03\u8bd5\u4efb\u52a1'}
+[2016-04-06 13:40:22,930](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6584] [lineno:17] : 57065140
+[2016-04-06 13:47:13,914](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:26] : swich
+[2016-04-06 13:47:13,914](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 13:47:13,917](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:26] : hellow
+[2016-04-06 13:47:13,918](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 13:47:13,921](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:26] : Test_Login
+[2016-04-06 13:47:13,921](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 13:47:13,924](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:26] : Test_API_Login
+[2016-04-06 13:47:13,927](INFO)[funcname:sysConfigQuery] [processNum:7484 threadNum:5972] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 13:47:14,846](INFO)[funcname:taskQuery] [processNum:7484 threadNum:5448] [lineno:17] : 57065140
+[2016-04-06 13:48:17,540](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6720] [lineno:17] : 57065140
+[2016-04-06 13:48:19,420](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6176] [lineno:17] : 57065140
+[2016-04-06 13:49:15,098](INFO)[funcname:taskQuery] [processNum:7484 threadNum:4392] [lineno:17] : 57065140
+[2016-04-06 13:53:06,313](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6736] [lineno:17] : 57065140
+[2016-04-06 13:57:15,446](INFO)[funcname:userlistQuery] [processNum:7484 threadNum:7704] [lineno:15] : tokon:57065140
+[2016-04-06 13:57:16,528](INFO)[funcname:taskQuery] [processNum:7484 threadNum:7864] [lineno:17] : 57065140
+[2016-04-06 13:59:23,173](INFO)[funcname:taskQuery] [processNum:7484 threadNum:7148] [lineno:17] : 57065140
+[2016-04-06 14:00:11,134](INFO)[funcname:userlistQuery] [processNum:7484 threadNum:244] [lineno:15] : tokon:57065140
+[2016-04-06 14:00:12,056](INFO)[funcname:taskQuery] [processNum:7484 threadNum:7712] [lineno:17] : 57065140
+[2016-04-06 14:03:49,611](INFO)[funcname:userlistQuery] [processNum:7484 threadNum:7212] [lineno:15] : tokon:57065140
+[2016-04-06 14:03:51,140](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6740] [lineno:17] : 57065140
+[2016-04-06 14:05:30,048](INFO)[funcname:userlistQuery] [processNum:7484 threadNum:7352] [lineno:15] : tokon:57065140
+[2016-04-06 14:05:31,112](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6796] [lineno:17] : 57065140
+[2016-04-06 14:05:32,648](INFO)[funcname:testSuiteLoad] [processNum:7484 threadNum:5196] [lineno:38] : coercing to Unicode: need string or buffer, long found
+[2016-04-06 14:08:25,542](INFO)[funcname:taskQuery] [processNum:7484 threadNum:6300] [lineno:17] : 57065140
+[2016-04-06 14:08:26,589](INFO)[funcname:userlistQuery] [processNum:7484 threadNum:8028] [lineno:15] : tokon:57065140
+[2016-04-06 14:08:28,230](INFO)[funcname:taskQuery] [processNum:7484 threadNum:4172] [lineno:17] : 57065140
+[2016-04-06 14:08:30,227](INFO)[funcname:runner] [processNum:7484 threadNum:7728] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 14:08:30,466](INFO)[funcname:runner] [processNum:7484 threadNum:7728] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 14:08:30,490](INFO)[funcname:CreatMySqlSentence] [processNum:7484 threadNum:7728] [lineno:203] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 14:08:30,703](INFO)[funcname:run] [processNum:7484 threadNum:7728] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 14:08:30,714](INFO)[funcname:sendRequest] [processNum:7484 threadNum:7728] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 14:08:30,782](INFO)[funcname:userLogin] [processNum:7484 threadNum:1204] [lineno:88] : 057065140L
+[2016-04-06 14:08:30,786](INFO)[funcname:run] [processNum:7484 threadNum:7728] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-06 14:08:30,792](INFO)[funcname:CreatMySqlSentence] [processNum:7484 threadNum:7728] [lineno:203] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 14:08:30,851](INFO)[funcname:run] [processNum:7484 threadNum:7728] [lineno:60] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 14:08:57,871](INFO)[funcname:runner] [processNum:7484 threadNum:7944] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 14:08:57,937](INFO)[funcname:runner] [processNum:7484 threadNum:7944] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 14:08:57,947](INFO)[funcname:CreatMySqlSentence] [processNum:7484 threadNum:7944] [lineno:203] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 14:08:58,013](INFO)[funcname:run] [processNum:7484 threadNum:7944] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 14:08:58,055](INFO)[funcname:sendRequest] [processNum:7484 threadNum:7944] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 14:08:58,094](INFO)[funcname:userLogin] [processNum:7484 threadNum:7192] [lineno:88] : 057065140L
+[2016-04-06 14:08:58,098](INFO)[funcname:run] [processNum:7484 threadNum:7944] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-06 14:08:58,118](INFO)[funcname:CreatMySqlSentence] [processNum:7484 threadNum:7944] [lineno:203] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 14:08:58,177](INFO)[funcname:run] [processNum:7484 threadNum:7944] [lineno:60] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 14:09:13,661](INFO)[funcname:runner] [processNum:7484 threadNum:7572] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 14:09:13,803](INFO)[funcname:runner] [processNum:7484 threadNum:7572] [lineno:40] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 14:09:13,812](INFO)[funcname:CreatMySqlSentence] [processNum:7484 threadNum:7572] [lineno:203] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 14:09:13,855](INFO)[funcname:run] [processNum:7484 threadNum:7572] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 14:09:13,864](INFO)[funcname:sendRequest] [processNum:7484 threadNum:7572] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 14:09:13,882](INFO)[funcname:userLogin] [processNum:7484 threadNum:4700] [lineno:88] : 057065140L
+[2016-04-06 14:09:13,887](INFO)[funcname:run] [processNum:7484 threadNum:7572] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-06 14:09:13,897](INFO)[funcname:CreatMySqlSentence] [processNum:7484 threadNum:7572] [lineno:203] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 14:09:13,944](INFO)[funcname:run] [processNum:7484 threadNum:7572] [lineno:60] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 20:21:55,346](INFO)[funcname:taskQuery] [processNum:2300 threadNum:5460] [lineno:17] : 57065140
+[2016-04-06 20:22:02,778](INFO)[funcname:runner] [processNum:2300 threadNum:1396] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 20:22:02,982](INFO)[funcname:runner] [processNum:2300 threadNum:1396] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 20:22:02,990](INFO)[funcname:CreatMySqlSentence] [processNum:2300 threadNum:1396] [lineno:203] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 20:22:03,194](INFO)[funcname:run] [processNum:2300 threadNum:1396] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 20:22:03,203](INFO)[funcname:sendRequest] [processNum:2300 threadNum:1396] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 20:22:03,243](INFO)[funcname:userLogin] [processNum:2300 threadNum:2404] [lineno:88] : 057065140L
+[2016-04-06 20:22:03,249](INFO)[funcname:run] [processNum:2300 threadNum:1396] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-06 20:22:03,255](INFO)[funcname:CreatMySqlSentence] [processNum:2300 threadNum:1396] [lineno:203] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 20:22:03,354](INFO)[funcname:run] [processNum:2300 threadNum:1396] [lineno:60] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 20:47:29,408](INFO)[funcname:userlistQuery] [processNum:7760 threadNum:660] [lineno:15] : tokon:57065140
+[2016-04-06 20:47:30,378](INFO)[funcname:taskQuery] [processNum:7760 threadNum:6060] [lineno:17] : 57065140
+[2016-04-06 20:47:31,966](INFO)[funcname:runner] [processNum:7760 threadNum:4624] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 20:47:32,059](INFO)[funcname:runner] [processNum:7760 threadNum:4624] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 20:47:32,071](INFO)[funcname:CreatMySqlSentence] [processNum:7760 threadNum:4624] [lineno:203] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 20:47:32,311](INFO)[funcname:run] [processNum:7760 threadNum:4624] [lineno:60] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 20:47:32,329](INFO)[funcname:sendRequest] [processNum:7760 threadNum:4624] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 20:47:32,354](INFO)[funcname:userLogin] [processNum:7760 threadNum:5504] [lineno:88] : 057065140L
+[2016-04-06 20:47:32,358](INFO)[funcname:run] [processNum:7760 threadNum:4624] [lineno:60] : 测试步骤【Test_Login】执行成功
+[2016-04-06 20:47:32,368](INFO)[funcname:CreatMySqlSentence] [processNum:7760 threadNum:4624] [lineno:203] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 20:47:32,418](INFO)[funcname:run] [processNum:7760 threadNum:4624] [lineno:60] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 21:23:00,819](INFO)[funcname:runner] [processNum:6956 threadNum:7252] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:23:00,934](INFO)[funcname:runner] [processNum:6956 threadNum:7252] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:23:00,954](INFO)[funcname:CreatMySqlSentence] [processNum:6956 threadNum:7252] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:23:01,013](INFO)[funcname:run] [processNum:6956 threadNum:7252] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:23:01,022](INFO)[funcname:taskRunner] [processNum:6956 threadNum:7252] [lineno:88] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:23:13,303](INFO)[funcname:runner] [processNum:6956 threadNum:1548] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:23:13,378](INFO)[funcname:runner] [processNum:6956 threadNum:1548] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:23:13,385](INFO)[funcname:CreatMySqlSentence] [processNum:6956 threadNum:1548] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:23:13,427](INFO)[funcname:run] [processNum:6956 threadNum:1548] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:23:13,436](INFO)[funcname:taskRunner] [processNum:6956 threadNum:1548] [lineno:88] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:25:02,061](INFO)[funcname:runner] [processNum:3508 threadNum:6708] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:25:02,121](INFO)[funcname:runner] [processNum:3508 threadNum:6708] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:25:02,154](INFO)[funcname:CreatMySqlSentence] [processNum:3508 threadNum:6708] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:25:02,315](INFO)[funcname:run] [processNum:3508 threadNum:6708] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:25:02,319](INFO)[funcname:taskRunner] [processNum:3508 threadNum:6708] [lineno:88] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:26:43,285](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:26] : swich
+[2016-04-06 21:26:43,286](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 21:26:43,288](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:26] : hellow
+[2016-04-06 21:26:43,290](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 21:26:43,292](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:26] : Test_Login
+[2016-04-06 21:26:43,298](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 21:26:43,299](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:26] : Test_API_Login
+[2016-04-06 21:26:43,302](INFO)[funcname:sysConfigQuery] [processNum:1348 threadNum:6680] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 21:26:44,062](INFO)[funcname:taskQuery] [processNum:1348 threadNum:1604] [lineno:18] : 57065140
+[2016-04-06 21:26:45,378](INFO)[funcname:runner] [processNum:1348 threadNum:2320] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:26:45,470](INFO)[funcname:runner] [processNum:1348 threadNum:2320] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:26:45,484](INFO)[funcname:CreatMySqlSentence] [processNum:1348 threadNum:2320] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:26:45,532](INFO)[funcname:run] [processNum:1348 threadNum:2320] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:26:45,536](INFO)[funcname:taskRunner] [processNum:1348 threadNum:2320] [lineno:89] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:29:02,229](INFO)[funcname:runner] [processNum:1348 threadNum:7552] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:29:02,318](INFO)[funcname:runner] [processNum:1348 threadNum:7552] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:29:02,325](INFO)[funcname:CreatMySqlSentence] [processNum:1348 threadNum:7552] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:29:02,368](INFO)[funcname:run] [processNum:1348 threadNum:7552] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:29:02,377](INFO)[funcname:taskRunner] [processNum:1348 threadNum:7552] [lineno:89] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:29:47,315](INFO)[funcname:runner] [processNum:1348 threadNum:1544] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:29:47,394](INFO)[funcname:runner] [processNum:1348 threadNum:1544] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:29:47,401](INFO)[funcname:CreatMySqlSentence] [processNum:1348 threadNum:1544] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:29:47,460](INFO)[funcname:run] [processNum:1348 threadNum:1544] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:29:47,467](INFO)[funcname:taskRunner] [processNum:1348 threadNum:1544] [lineno:89] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:30:14,444](INFO)[funcname:runner] [processNum:5292 threadNum:4320] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:30:14,530](INFO)[funcname:runner] [processNum:5292 threadNum:4320] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:30:14,546](INFO)[funcname:CreatMySqlSentence] [processNum:5292 threadNum:4320] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:30:14,584](INFO)[funcname:run] [processNum:5292 threadNum:4320] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:30:14,628](INFO)[funcname:sendRequest] [processNum:5292 threadNum:4320] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 21:30:14,846](INFO)[funcname:userLogin] [processNum:5292 threadNum:7244] [lineno:88] : 057065140L
+[2016-04-06 21:30:14,851](INFO)[funcname:run] [processNum:5292 threadNum:4320] [lineno:67] : 测试步骤【Test_Login】执行失败，失败原因：'bool' object is not iterable
+[2016-04-06 21:30:15,020](INFO)[funcname:CreatMySqlSentence] [processNum:5292 threadNum:4320] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 21:30:15,052](INFO)[funcname:run] [processNum:5292 threadNum:4320] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 21:31:18,536](INFO)[funcname:runner] [processNum:7232 threadNum:5808] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:31:18,641](INFO)[funcname:runner] [processNum:7232 threadNum:5808] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:31:18,651](INFO)[funcname:CreatMySqlSentence] [processNum:7232 threadNum:5808] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:31:18,680](INFO)[funcname:run] [processNum:7232 threadNum:5808] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:31:18,683](INFO)[funcname:taskRunner] [processNum:7232 threadNum:5808] [lineno:89] : type object 'TestStep' has no attribute 'objects'
+[2016-04-06 21:33:47,253](INFO)[funcname:runner] [processNum:7276 threadNum:3988] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:33:47,351](INFO)[funcname:runner] [processNum:7276 threadNum:3988] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:33:47,361](INFO)[funcname:CreatMySqlSentence] [processNum:7276 threadNum:3988] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:33:47,417](INFO)[funcname:run] [processNum:7276 threadNum:3988] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:33:47,536](INFO)[funcname:sendRequest] [processNum:7276 threadNum:3988] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 21:33:47,578](INFO)[funcname:userLogin] [processNum:7276 threadNum:3360] [lineno:88] : 057065140L
+[2016-04-06 21:33:47,582](INFO)[funcname:run] [processNum:7276 threadNum:3988] [lineno:67] : 测试步骤【Test_Login】执行失败，失败原因：'bool' object is not iterable
+[2016-04-06 21:33:47,585](INFO)[funcname:taskRunner] [processNum:7276 threadNum:3988] [lineno:89] : 'TestStep' object has no attribute 'stepid'
+[2016-04-06 21:34:32,263](INFO)[funcname:runner] [processNum:6712 threadNum:1352] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:34:32,374](INFO)[funcname:runner] [processNum:6712 threadNum:1352] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:34:32,384](INFO)[funcname:CreatMySqlSentence] [processNum:6712 threadNum:1352] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:34:32,459](INFO)[funcname:run] [processNum:6712 threadNum:1352] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:34:32,523](INFO)[funcname:sendRequest] [processNum:6712 threadNum:1352] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 21:34:32,571](INFO)[funcname:userLogin] [processNum:6712 threadNum:7376] [lineno:88] : 057065140L
+[2016-04-06 21:34:32,575](INFO)[funcname:run] [processNum:6712 threadNum:1352] [lineno:67] : 测试步骤【Test_Login】执行失败，失败原因：'bool' object is not iterable
+[2016-04-06 21:34:32,615](INFO)[funcname:CreatMySqlSentence] [processNum:6712 threadNum:1352] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 21:34:32,664](INFO)[funcname:run] [processNum:6712 threadNum:1352] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 21:38:21,358](INFO)[funcname:runner] [processNum:4832 threadNum:5272] [lineno:17] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:38:21,459](INFO)[funcname:runner] [processNum:4832 threadNum:5272] [lineno:36] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:38:21,480](INFO)[funcname:CreatMySqlSentence] [processNum:4832 threadNum:5272] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:38:21,538](INFO)[funcname:run] [processNum:4832 threadNum:5272] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:38:21,582](INFO)[funcname:sendRequest] [processNum:4832 threadNum:5272] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 21:38:21,630](INFO)[funcname:userLogin] [processNum:4832 threadNum:6480] [lineno:88] : 057065140L
+[2016-04-06 21:38:21,635](INFO)[funcname:run] [processNum:4832 threadNum:5272] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 21:38:21,686](INFO)[funcname:CreatMySqlSentence] [processNum:4832 threadNum:5272] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 21:38:21,710](INFO)[funcname:run] [processNum:4832 threadNum:5272] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 21:46:18,960](INFO)[funcname:taskQuery] [processNum:1548 threadNum:6452] [lineno:18] : 57065140
+[2016-04-06 21:46:19,378](INFO)[funcname:userlistQuery] [processNum:1548 threadNum:1716] [lineno:15] : tokon:57065140
+[2016-04-06 21:46:20,240](INFO)[funcname:taskQuery] [processNum:1548 threadNum:3620] [lineno:18] : 57065140
+[2016-04-06 21:46:22,344](INFO)[funcname:runner] [processNum:1548 threadNum:6536] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 21:46:22,424](INFO)[funcname:runner] [processNum:1548 threadNum:6536] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 21:46:22,447](INFO)[funcname:CreatMySqlSentence] [processNum:1548 threadNum:6536] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 21:46:22,510](INFO)[funcname:run] [processNum:1548 threadNum:6536] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 21:46:22,598](INFO)[funcname:sendRequest] [processNum:1548 threadNum:6536] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 21:46:22,641](INFO)[funcname:userLogin] [processNum:1548 threadNum:5888] [lineno:88] : 057065140L
+[2016-04-06 21:46:22,648](INFO)[funcname:run] [processNum:1548 threadNum:6536] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 21:46:22,696](INFO)[funcname:CreatMySqlSentence] [processNum:1548 threadNum:6536] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 21:46:22,734](INFO)[funcname:run] [processNum:1548 threadNum:6536] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 21:53:47,203](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:26] : swich
+[2016-04-06 21:53:47,204](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 21:53:47,207](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:26] : hellow
+[2016-04-06 21:53:47,207](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 21:53:47,210](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:26] : Test_Login
+[2016-04-06 21:53:47,211](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 21:53:47,213](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:26] : Test_API_Login
+[2016-04-06 21:53:47,216](INFO)[funcname:sysConfigQuery] [processNum:8060 threadNum:7528] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 21:53:48,338](INFO)[funcname:taskQuery] [processNum:8060 threadNum:7828] [lineno:18] : 57065140
+[2016-04-06 21:53:51,434](INFO)[funcname:taskQuery] [processNum:8060 threadNum:7660] [lineno:18] : 57065140
+[2016-04-06 21:55:01,854](INFO)[funcname:taskQuery] [processNum:8060 threadNum:1264] [lineno:18] : 57065140
+[2016-04-06 21:55:03,690](INFO)[funcname:taskQuery] [processNum:8060 threadNum:5768] [lineno:18] : 57065140
+[2016-04-06 21:56:22,398](INFO)[funcname:userLogin] [processNum:8060 threadNum:4816] [lineno:88] : 057065140L
+[2016-04-06 21:56:26,246](INFO)[funcname:taskQuery] [processNum:8060 threadNum:5852] [lineno:18] : 57065140
+[2016-04-06 21:58:37,628](INFO)[funcname:userLogin] [processNum:8060 threadNum:2420] [lineno:88] : 057065140L
+[2016-04-06 21:58:39,566](INFO)[funcname:taskQuery] [processNum:8060 threadNum:7584] [lineno:18] : 57065140
+[2016-04-06 21:59:57,875](INFO)[funcname:userLogin] [processNum:8060 threadNum:832] [lineno:88] : 057065140L
+[2016-04-06 22:00:01,757](INFO)[funcname:taskQuery] [processNum:8060 threadNum:6860] [lineno:18] : 57065140
+[2016-04-06 22:00:03,872](INFO)[funcname:runner] [processNum:8060 threadNum:7680] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:00:03,974](INFO)[funcname:runner] [processNum:8060 threadNum:7680] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:00:03,986](INFO)[funcname:CreatMySqlSentence] [processNum:8060 threadNum:7680] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:00:04,052](INFO)[funcname:run] [processNum:8060 threadNum:7680] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:00:04,131](INFO)[funcname:sendRequest] [processNum:8060 threadNum:7680] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:00:04,183](INFO)[funcname:userLogin] [processNum:8060 threadNum:7424] [lineno:88] : 057065140L
+[2016-04-06 22:00:04,187](INFO)[funcname:run] [processNum:8060 threadNum:7680] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:00:04,392](INFO)[funcname:CreatMySqlSentence] [processNum:8060 threadNum:7680] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:00:04,447](INFO)[funcname:run] [processNum:8060 threadNum:7680] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:00:07,819](INFO)[funcname:taskQuery] [processNum:8060 threadNum:7848] [lineno:18] : 57065140
+[2016-04-06 22:04:53,309](INFO)[funcname:taskQuery] [processNum:4448 threadNum:7248] [lineno:18] : 57065140
+[2016-04-06 22:04:57,026](INFO)[funcname:runner] [processNum:4448 threadNum:832] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:04:57,122](INFO)[funcname:runner] [processNum:4448 threadNum:832] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:04:57,134](INFO)[funcname:CreatMySqlSentence] [processNum:4448 threadNum:832] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:04:57,164](INFO)[funcname:run] [processNum:4448 threadNum:832] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:04:57,230](INFO)[funcname:sendRequest] [processNum:4448 threadNum:832] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:04:57,279](INFO)[funcname:userLogin] [processNum:4448 threadNum:6776] [lineno:88] : 057065140L
+[2016-04-06 22:04:57,286](INFO)[funcname:run] [processNum:4448 threadNum:832] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:04:57,358](INFO)[funcname:CreatMySqlSentence] [processNum:4448 threadNum:832] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:04:57,385](INFO)[funcname:run] [processNum:4448 threadNum:832] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:04:58,739](INFO)[funcname:taskQuery] [processNum:4448 threadNum:2844] [lineno:18] : 57065140
+[2016-04-06 22:05:33,398](INFO)[funcname:runner] [processNum:4448 threadNum:5744] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:05:33,532](INFO)[funcname:runner] [processNum:4448 threadNum:5744] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:05:33,542](INFO)[funcname:CreatMySqlSentence] [processNum:4448 threadNum:5744] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:05:33,594](INFO)[funcname:run] [processNum:4448 threadNum:5744] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:05:33,644](INFO)[funcname:sendRequest] [processNum:4448 threadNum:5744] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:05:33,680](INFO)[funcname:userLogin] [processNum:4448 threadNum:4028] [lineno:88] : 057065140L
+[2016-04-06 22:05:33,684](INFO)[funcname:run] [processNum:4448 threadNum:5744] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:05:33,742](INFO)[funcname:CreatMySqlSentence] [processNum:4448 threadNum:5744] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:05:33,775](INFO)[funcname:run] [processNum:4448 threadNum:5744] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:05:35,147](INFO)[funcname:taskQuery] [processNum:4448 threadNum:7092] [lineno:18] : 57065140
+[2016-04-06 22:05:35,163](INFO)[funcname:taskQuery] [processNum:4448 threadNum:7092] [lineno:34] : datetime.datetime(2016, 4, 6, 22, 5, 33) is not JSON serializable
+[2016-04-06 22:06:08,142](INFO)[funcname:taskQuery] [processNum:6944 threadNum:7196] [lineno:18] : 57065140
+[2016-04-06 22:06:08,158](INFO)[funcname:taskQuery] [processNum:6944 threadNum:7196] [lineno:34] : datetime.datetime(2016, 4, 6, 22, 5, 33) is not JSON serializable
+[2016-04-06 22:06:11,533](INFO)[funcname:taskQuery] [processNum:6944 threadNum:164] [lineno:18] : 57065140
+[2016-04-06 22:06:11,549](INFO)[funcname:taskQuery] [processNum:6944 threadNum:164] [lineno:34] : datetime.datetime(2016, 4, 6, 22, 5, 33) is not JSON serializable
+[2016-04-06 22:06:59,436](INFO)[funcname:taskQuery] [processNum:4536 threadNum:256] [lineno:18] : 57065140
+[2016-04-06 22:07:30,615](INFO)[funcname:runner] [processNum:4536 threadNum:5876] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:07:30,701](INFO)[funcname:runner] [processNum:4536 threadNum:5876] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:07:30,710](INFO)[funcname:CreatMySqlSentence] [processNum:4536 threadNum:5876] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:07:30,750](INFO)[funcname:run] [processNum:4536 threadNum:5876] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:07:30,811](INFO)[funcname:sendRequest] [processNum:4536 threadNum:5876] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:07:30,857](INFO)[funcname:userLogin] [processNum:4536 threadNum:3312] [lineno:88] : 057065140L
+[2016-04-06 22:07:30,861](INFO)[funcname:run] [processNum:4536 threadNum:5876] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:07:30,900](INFO)[funcname:CreatMySqlSentence] [processNum:4536 threadNum:5876] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:07:30,947](INFO)[funcname:run] [processNum:4536 threadNum:5876] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:07:32,417](INFO)[funcname:taskQuery] [processNum:4536 threadNum:5056] [lineno:18] : 57065140
+[2016-04-06 22:08:23,003](INFO)[funcname:taskQuery] [processNum:4536 threadNum:7632] [lineno:18] : 57065140
+[2016-04-06 22:08:30,477](INFO)[funcname:runner] [processNum:4536 threadNum:7608] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:08:30,562](INFO)[funcname:runner] [processNum:4536 threadNum:7608] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:08:30,585](INFO)[funcname:CreatMySqlSentence] [processNum:4536 threadNum:7608] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:08:30,621](INFO)[funcname:run] [processNum:4536 threadNum:7608] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:08:30,678](INFO)[funcname:sendRequest] [processNum:4536 threadNum:7608] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:08:30,720](INFO)[funcname:userLogin] [processNum:4536 threadNum:7288] [lineno:88] : 057065140L
+[2016-04-06 22:08:30,726](INFO)[funcname:run] [processNum:4536 threadNum:7608] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:08:30,762](INFO)[funcname:CreatMySqlSentence] [processNum:4536 threadNum:7608] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:08:30,792](INFO)[funcname:run] [processNum:4536 threadNum:7608] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:08:32,016](INFO)[funcname:taskQuery] [processNum:4536 threadNum:216] [lineno:18] : 57065140
+[2016-04-06 22:11:11,709](INFO)[funcname:runner] [processNum:7392 threadNum:3020] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:11:11,802](INFO)[funcname:runner] [processNum:7392 threadNum:3020] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:11:11,812](INFO)[funcname:CreatMySqlSentence] [processNum:7392 threadNum:3020] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:11:11,880](INFO)[funcname:run] [processNum:7392 threadNum:3020] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:11:11,953](INFO)[funcname:sendRequest] [processNum:7392 threadNum:3020] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:11:11,977](INFO)[funcname:userLogin] [processNum:7392 threadNum:8180] [lineno:88] : 057065140L
+[2016-04-06 22:11:11,983](INFO)[funcname:run] [processNum:7392 threadNum:3020] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:11:12,032](INFO)[funcname:CreatMySqlSentence] [processNum:7392 threadNum:3020] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:11:12,059](INFO)[funcname:run] [processNum:7392 threadNum:3020] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:11:13,371](INFO)[funcname:taskQuery] [processNum:7392 threadNum:6228] [lineno:18] : 57065140
+[2016-04-06 22:11:17,726](INFO)[funcname:runner] [processNum:7392 threadNum:5616] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:11:17,825](INFO)[funcname:runner] [processNum:7392 threadNum:5616] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:11:17,836](INFO)[funcname:CreatMySqlSentence] [processNum:7392 threadNum:5616] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:11:17,888](INFO)[funcname:run] [processNum:7392 threadNum:5616] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:11:17,943](INFO)[funcname:sendRequest] [processNum:7392 threadNum:5616] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:11:17,979](INFO)[funcname:userLogin] [processNum:7392 threadNum:5548] [lineno:88] : 057065140L
+[2016-04-06 22:11:17,984](INFO)[funcname:run] [processNum:7392 threadNum:5616] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:11:18,022](INFO)[funcname:CreatMySqlSentence] [processNum:7392 threadNum:5616] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:11:18,046](INFO)[funcname:run] [processNum:7392 threadNum:5616] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:11:19,467](INFO)[funcname:taskQuery] [processNum:7392 threadNum:5900] [lineno:18] : 57065140
+[2016-04-06 22:11:32,063](INFO)[funcname:runner] [processNum:1628 threadNum:6196] [lineno:18] : Atdp登录测试集执行,测试员：wangjun 执行测试项数：1
+[2016-04-06 22:11:32,142](INFO)[funcname:runner] [processNum:1628 threadNum:6196] [lineno:37] :  正常登录测试项执行 执行测试步骤数：3
+[2016-04-06 22:11:32,151](INFO)[funcname:CreatMySqlSentence] [processNum:1628 threadNum:6196] [lineno:211] : 测试用SQL语句: insert into user_info ( username,password ) values ( 'wangsan','123456' )
+[2016-04-06 22:11:32,193](INFO)[funcname:run] [processNum:1628 threadNum:6196] [lineno:63] : 测试步骤【Util_AddMysqlData】执行成功
+[2016-04-06 22:11:32,473](INFO)[funcname:sendRequest] [processNum:1628 threadNum:6196] [lineno:19] : http请求内容：http://127.0.0.1:8000/AtdpX/userInfo/login/?username=wangjun&password=123456
+[2016-04-06 22:11:32,529](INFO)[funcname:userLogin] [processNum:1628 threadNum:5744] [lineno:88] : 057065140L
+[2016-04-06 22:11:32,546](INFO)[funcname:run] [processNum:1628 threadNum:6196] [lineno:63] : 测试步骤【Test_Login】执行成功
+[2016-04-06 22:11:32,592](INFO)[funcname:CreatMySqlSentence] [processNum:1628 threadNum:6196] [lineno:211] : 测试用SQL语句: delete from `user_info` where  username = 'wangsan' and password = '123456' 
+[2016-04-06 22:11:32,621](INFO)[funcname:run] [processNum:1628 threadNum:6196] [lineno:63] : 测试步骤【Util_RemoveMysqlData】执行成功
+[2016-04-06 22:11:33,730](INFO)[funcname:taskQuery] [processNum:1628 threadNum:7092] [lineno:18] : 57065140
+[2016-04-06 22:11:55,227](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:26] : swich
+[2016-04-06 22:11:55,227](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 22:11:55,243](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:26] : hellow
+[2016-04-06 22:11:55,243](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 22:11:55,243](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:26] : Test_Login
+[2016-04-06 22:11:55,243](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 22:11:55,243](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:26] : Test_API_Login
+[2016-04-06 22:11:55,243](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:7568] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 22:11:56,269](INFO)[funcname:taskQuery] [processNum:1628 threadNum:6480] [lineno:18] : 57065140
+[2016-04-06 22:11:58,039](INFO)[funcname:taskQuery] [processNum:1628 threadNum:6928] [lineno:18] : 57065140
+[2016-04-06 22:11:59,176](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:1292] [lineno:15] : tokon:57065140
+[2016-04-06 22:12:02,323](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:5908] [lineno:15] : tokon:57065140
+[2016-04-06 22:12:03,950](INFO)[funcname:taskQuery] [processNum:1628 threadNum:5924] [lineno:18] : 57065140
+[2016-04-06 22:12:05,145](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:7668] [lineno:15] : tokon:57065140
+[2016-04-06 22:12:13,309](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:7928] [lineno:15] : tokon:57065140
+[2016-04-06 22:12:14,217](INFO)[funcname:taskQuery] [processNum:1628 threadNum:540] [lineno:18] : 57065140
+[2016-04-06 22:12:15,973](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:26] : swich
+[2016-04-06 22:12:15,973](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 22:12:15,973](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:26] : hellow
+[2016-04-06 22:12:15,973](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 22:12:15,973](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:26] : Test_Login
+[2016-04-06 22:12:15,974](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 22:12:15,974](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:26] : Test_API_Login
+[2016-04-06 22:12:15,974](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:732] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 22:20:18,805](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:26] : swich
+[2016-04-06 22:20:18,821](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 22:20:18,821](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:26] : hellow
+[2016-04-06 22:20:18,835](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 22:20:18,835](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:26] : Test_Login
+[2016-04-06 22:20:18,835](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 22:20:18,835](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:26] : Test_API_Login
+[2016-04-06 22:20:18,851](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:4132] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 22:22:09,693](INFO)[funcname:taskQuery] [processNum:1628 threadNum:6632] [lineno:18] : 57065140
+[2016-04-06 22:22:12,767](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:6600] [lineno:15] : tokon:57065140
+[2016-04-06 22:22:14,535](INFO)[funcname:taskQuery] [processNum:1628 threadNum:5400] [lineno:18] : 57065140
+[2016-04-06 22:22:19,325](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:3492] [lineno:15] : tokon:57065140
+[2016-04-06 22:23:03,089](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:5796] [lineno:15] : tokon:57065140
+[2016-04-06 22:23:13,756](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:6592] [lineno:15] : tokon:57065140
+[2016-04-06 22:23:52,438](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:6784] [lineno:15] : tokon:57065140
+[2016-04-06 22:24:26,346](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:2452] [lineno:15] : tokon:57065140
+[2016-04-06 22:24:49,825](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:7820] [lineno:15] : tokon:57065140
+[2016-04-06 22:25:15,727](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:7584] [lineno:15] : tokon:57065140
+[2016-04-06 22:25:34,576](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:6544] [lineno:15] : tokon:57065140
+[2016-04-06 22:25:46,612](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:8016] [lineno:15] : tokon:57065140
+[2016-04-06 22:27:34,634](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:5448] [lineno:15] : tokon:57065140
+[2016-04-06 22:27:36,265](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:26] : swich
+[2016-04-06 22:27:36,267](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:28] : {"parameterValues": "0", "parameterName": "swich", "id": 1}
+[2016-04-06 22:27:36,272](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:26] : hellow
+[2016-04-06 22:27:36,276](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:28] : {"parameterValues": "1", "parameterName": "hellow", "id": 2}
+[2016-04-06 22:27:36,279](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:26] : Test_Login
+[2016-04-06 22:27:36,283](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_Login", "id": 3}
+[2016-04-06 22:27:36,288](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:26] : Test_API_Login
+[2016-04-06 22:27:36,290](INFO)[funcname:sysConfigQuery] [processNum:1628 threadNum:6480] [lineno:28] : {"parameterValues": "http://127.0.0.1:8000/AtdpX/userInfo/login/", "parameterName": "Test_API_Login", "id": 4}
+[2016-04-06 22:29:25,309](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:5276] [lineno:15] : tokon:57065140
+[2016-04-06 22:29:50,631](INFO)[funcname:userUpdate] [processNum:1628 threadNum:7304] [lineno:38] : <type 'dict'>
+[2016-04-06 22:29:50,648](INFO)[funcname:userUpdate] [processNum:1628 threadNum:7304] [lineno:51] : 修改用户信息不存在
+[2016-04-06 22:29:52,693](INFO)[funcname:userlistQuery] [processNum:1628 threadNum:5208] [lineno:15] : tokon:57065140

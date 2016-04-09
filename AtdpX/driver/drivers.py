@@ -94,7 +94,7 @@ class TestDriverBase(object):
                 retLog=e
                 return False,retLog
         return True,retLog
-    def Util_VerifyResult(self):
+    def Util_VerifyResult(self,param,*args):
         retLog="Pass"
         for expect in self.verifyData:
             if not expect:
