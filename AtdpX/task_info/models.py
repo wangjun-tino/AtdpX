@@ -8,7 +8,7 @@ class TaskInfo(models.Model):
     task_type=models.CharField(null=False,db_column='task_type',db_tablespace='atdpx_db',max_length=45)
     task_name=models.CharField(null=False,db_column='task_name',db_tablespace='atdpx_db',max_length=45)
     status=models.CharField(null=False,db_column='status',db_tablespace='atdpx_db',max_length=45)
-    begin_time=models.CharField(null=False,db_column='begin_time',db_tablespace='atdpx_db')
+    begin_time=models.CharField(null=False,db_column='begin_time',db_tablespace='atdpx_db',max_length=45)
     end_time=models.CharField(null=False,db_column='end_time',db_tablespace='atdpx_db',max_length=45)
     class Meta:
         db_table = 'task_info'

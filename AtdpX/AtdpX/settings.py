@@ -37,6 +37,9 @@ INSTALLED_APPS = (
     #'django.contrib.messages',
     'django.contrib.staticfiles',
     'userInfo',
+    'testCase',
+    'task_info',
+    'sysConfig',
  #   'celerytasks'
 )
 
